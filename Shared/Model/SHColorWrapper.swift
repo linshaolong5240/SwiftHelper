@@ -1,0 +1,50 @@
+//
+//  SHColorWrapper.swift
+//  SwiftHelper
+//
+//  Created by sauron on 2021/12/3.
+//  Copyright © 2022 com.teenloong. All rights reserved.
+//
+
+import SwiftUI
+
+struct SHColorWrapper: Codable, Equatable, Hashable {
+    var red: Double
+    var green: Double
+    var blue: Double
+    var alpha: Double
+    
+    public init(red: Double, green: Double, blue: Double, alpha: Double = 1.0) {
+        self.red = red
+        self.green = green
+        self.blue = blue
+        self.alpha = alpha
+    }
+}
+
+@available(iOS 14.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+extension SHColorWrapper {
+    public init(_ color: Color) {
+        guard let c = CPColor(color).cgColor.components, c.count == 4 else {
+            self.init(red: 1, green: 1, blue: 1, alpha: 1)
+            return
+        }
+        self.init(red: Double(c[0]), green: Double(c[1]), blue: Double(c[2]), alpha: Double(c[3]))
+    }
+    
+    var color: Color { Color(red: red, green: green, blue: blue, opacity: alpha) }
+}
+
+extension SHColorWrapper {
+    public init(_ color: CPColor) {
+        guard let c = color.cgColor.components, c.count == 4 else {
+            self.init(red: 1, green: 1, blue: 1, alpha: 1)
+            return
+        }
+        self.init(red: Double(c[0]), green: Double(c[1]), blue: Double(c[2]), alpha: Double(c[3]))
+    }
+}
+
+extension Color {
+    var colorWrapper: SHColorWrapper { .init(self) }
+}

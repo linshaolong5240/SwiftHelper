@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  SwiftHelper
+
+  Created by sauron on 2022/1/14.
+  
+*/
+//Common
+"Default" = "Default";
+"Unknown" = "Unknown";
+
+//Common Action
+"Cancel" = "Cancel";
+"Close" = "Close";
+"Delete" = "Delete";
+"Done" = "Done";
+"Generate" = "Generate";
+"Get" = "Get";
+"Next" = "Next";
+"OK" = "OK";
+"Save" = "Save";
+"Select All" = "Select All";
+"Select Photo" = "Select Photo";
+"Skip" = "Skip";
+"Sure" = "Sure";
+
+//Widget
+"Small" = "Small";
+"Medium" = "Medium";
+"Large" = "Large";
+
+"DefaultWidget tip1" = "1.Long press to edit";
+"DefaultWidget tip2" = "2.Click to edit widget";
+"DefaultWidget tip3" = "3.Select widget";
+
+"Calendar" = "Calendar";
+"Clock" = "Clock";
+"Photo" = "Photo";
+
+//Widegt Position
+"None" = "None";
+"Top Left" = "Top Left";
+"Top Right" = "Top Right";
+"Middle Left" = "Middle Left";
+"Middle Right" = "Middle Right";
+"Bottom Left" = "Bottom Left";
+"Bottom Right" = "Bottom Right";
+"Top" = "Top";
+"Middle" = "Middle";
+"Bottom" = "Bottom";
+
+//Widget Edit Item
+"Font Color" = "Font Color";
+"Background" = "Background";
+"Border" = "Border";
+"Transparent Background" = "Transparent Background";
+
+"My Widget" = "My Widget";
+
+//Time
+"AM" = "AM";
+"PM" = "PM";
+
+//Authorization
+"Go to Authorization" = "Authorize";
+"Location Permissions" = "Location Permissions";
+"Location Authorization Desc" = "Need to open location permission to use current location";
+"PhotoLibrary Permissions" = "Album permissions";
+"PhotoLibrary Authorization Desc" = "Need to open album permissions to view and save images";
+"Camera Permissions" = "Camera permissions";
+"Camera Authorization Desc" = "Need to open camera permission to use related functions";

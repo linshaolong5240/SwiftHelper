@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>WidgetLargeConfigurationIntent</string>
+		<string>WidgetMediumConfigurationIntent</string>
+		<string>WidgetSmallConfigurationIntent</string>
+	</array>
+</dict>
+</plist>

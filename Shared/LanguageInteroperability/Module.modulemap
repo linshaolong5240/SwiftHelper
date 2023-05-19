@@ -1,0 +1,23 @@
+//
+//  Module
+//  SwiftHelper
+//
+//  Created by sauron on 2023/5/19.
+//  Copyright © 2023 com.sauronpi. All rights reserved.
+//
+
+module SPC {
+    header "C/SPC.h"
+    export *
+}
+
+module SPCPP {
+    header "CPP/SPCPP.hpp"
+    export *
+    requires cplusplus
+}
+
+module SPObjectiveC {
+    header "ObjectiveC/SPObjectiveCTest.h"
+    export *
+}

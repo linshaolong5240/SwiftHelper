@@ -47,7 +47,9 @@ class ContactsDemoViewModel: ObservableObject {
     
     private func requestAuthorization() {
         store.requestAccess(for: .contacts) { [weak self] isAccess, error in
-            self?.authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
+            DispatchQueue.main.async {
+                self?.authorizationStatus = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
+            }
             if let e = error {
                 #if DEBUG
                 print(e)

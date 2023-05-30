@@ -3,3 +3,5 @@
 //
 
 // Use modulemap instal of include header file
+
+#include "ShaderTypes.h"

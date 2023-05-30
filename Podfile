@@ -47,6 +47,8 @@ target 'SwiftHelper (macOS)' do
   database
   net
   reactive
+  
+  pod 'SnapKit', '~> 5.6.0'
 end
 
 target 'SwiftHelperIntent' do

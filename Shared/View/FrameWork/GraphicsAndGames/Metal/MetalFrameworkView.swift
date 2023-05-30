@@ -10,9 +10,19 @@ import SwiftUI
 
 struct MetalFrameworkView: View {
     var body: some View {
-        List {
-            Section("Example") {
-                
+        NavigationStack {
+            List {
+                NavigationLink("Metal Content") {
+                    MetalContentView()
+                }
+                NavigationLink("Trangle") {
+                    MetalTrangleView()
+                        .overlay {
+                            GeometryReader { geometry in
+                                Text("width:\(geometry.size.width), height:\(geometry.size.height)")
+                            }
+                        }
+                }
             }
         }
     }

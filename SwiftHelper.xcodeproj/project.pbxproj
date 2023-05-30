@@ -112,6 +112,10 @@
 		303E98CC29C15FC100B4B462 /* TechnologySpecificViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */; };
 		303E98CE29C1601200B4B462 /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CD29C1601200B4B462 /* PhotosPickerView.swift */; };
 		303E98CF29C1601200B4B462 /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CD29C1601200B4B462 /* PhotosPickerView.swift */; };
+		3047207B2A246DC70081E028 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207A2A246DC70081E028 /* MetalRenderer.swift */; };
+		3047207C2A246DC70081E028 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207A2A246DC70081E028 /* MetalRenderer.swift */; };
+		3047207E2A2484FC0081E028 /* MetalTrangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207D2A2484FC0081E028 /* MetalTrangleView.swift */; };
+		3047207F2A2484FC0081E028 /* MetalTrangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207D2A2484FC0081E028 /* MetalTrangleView.swift */; };
 		3051DF7429FD49CA000BB569 /* SwiftUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */; };
 		3051DF7529FD49CA000BB569 /* SwiftUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */; };
 		3051DF7729FE52C1000BB569 /* SearchPathDomainMask+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7629FE52C1000BB569 /* SearchPathDomainMask+Extension.swift */; };
@@ -120,6 +124,8 @@
 		3051DF7B29FE5E1A000BB569 /* SearchPathDirectory+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7929FE5E1A000BB569 /* SearchPathDirectory+Extension.swift */; };
 		30544BF62A16F12400164B28 /* SPObjectiveCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DB6122A16D88C0018CE70 /* SPObjectiveCTest.m */; };
 		30544BF72A16F12400164B28 /* SPObjectiveCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 307DB6122A16D88C0018CE70 /* SPObjectiveCTest.m */; };
+		3073318F2A2341CE00DEF768 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* Shaders.metal */; };
+		307331902A2341CE00DEF768 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* Shaders.metal */; };
 		307DFA2D2A1589A7004E0F8D /* FileImporterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */; };
 		307DFA2E2A1589A7004E0F8D /* FileImporterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */; };
 		307DFA302A158E66004E0F8D /* OnDropExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2F2A158E66004E0F8D /* OnDropExampleView.swift */; };
@@ -624,9 +630,13 @@
 		303C0F0329A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextInputAndOutputView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextInputAndOutputView.swift; sourceTree = SOURCE_ROOT; };
 		303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TechnologySpecificViews.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/TechnologySpecificViews/TechnologySpecificViews.swift; sourceTree = SOURCE_ROOT; };
 		303E98CD29C1601200B4B462 /* PhotosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosPickerView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/TechnologySpecificViews/PhotosPickerView.swift; sourceTree = SOURCE_ROOT; };
+		3047207A2A246DC70081E028 /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		3047207D2A2484FC0081E028 /* MetalTrangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MetalTrangleView.swift; path = Shared/View/FrameWork/GraphicsAndGames/Metal/MetalTrangleView.swift; sourceTree = SOURCE_ROOT; };
 		3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIPickerView.swift; path = Shared/View/Framework/AppFrameworks/SwiftUI/Controls/SwiftUIPickerView.swift; sourceTree = SOURCE_ROOT; };
 		3051DF7629FE52C1000BB569 /* SearchPathDomainMask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPathDomainMask+Extension.swift"; sourceTree = "<group>"; };
 		3051DF7929FE5E1A000BB569 /* SearchPathDirectory+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPathDirectory+Extension.swift"; sourceTree = "<group>"; };
+		3073318E2A2341CE00DEF768 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		307331912A23426F00DEF768 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		307DB6112A16D88C0018CE70 /* SPObjectiveCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPObjectiveCTest.h; sourceTree = "<group>"; };
 		307DB6122A16D88C0018CE70 /* SPObjectiveCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPObjectiveCTest.m; sourceTree = "<group>"; };
 		307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileImporterExampleView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Modifiers/FileImporterExampleView.swift; sourceTree = SOURCE_ROOT; };
@@ -1277,6 +1287,16 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		3073318D2A2341B100DEF768 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				307331912A23426F00DEF768 /* ShaderTypes.h */,
+				3073318E2A2341CE00DEF768 /* Shaders.metal */,
+				3047207A2A246DC70081E028 /* MetalRenderer.swift */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
 		3078064B29A71D88000A136E /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -1305,8 +1325,9 @@
 		309F43382A180E30009A612F /* Metal */ = {
 			isa = PBXGroup;
 			children = (
-				309F43352A180D10009A612F /* MetalFrameworkView.swift */,
 				309F43392A180E54009A612F /* MetalContentView.swift */,
+				309F43352A180D10009A612F /* MetalFrameworkView.swift */,
+				3047207D2A2484FC0081E028 /* MetalTrangleView.swift */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -1752,6 +1773,7 @@
 				EF596870274C78D7003D88F6 /* Helper */,
 				30D5260F2A16B7CA007A61A8 /* LanguageInteroperability */,
 				EF9B58CE27916B1B00E6C6ED /* Localizable.strings */,
+				3073318D2A2341B100DEF768 /* Metal */,
 				EF4F10CA2759BEA100AF53DC /* Model */,
 				3025C6EE29CD7E8E00CFE638 /* SFSymbols */,
 				EF8AC8D12791521A00FF227E /* State */,
@@ -2465,6 +2487,7 @@
 				1842659229973B79004D97B3 /* SHImageCollectionViewCell.swift in Sources */,
 				EF596872274C7905003D88F6 /* UserStorgeHelper.swift in Sources */,
 				EFC41CF227DAF2F4009E0C55 /* SHGuideWidgetView.swift in Sources */,
+				3073318F2A2341CE00DEF768 /* Shaders.metal in Sources */,
 				EF79FDDD282640E800CBB68D /* SHWidgetGifModelEditer.swift in Sources */,
 				EF677F9227C734C900C1F973 /* UICollectionHorizontalView.swift in Sources */,
 				4478E458288D5FE400BDD67E /* CoreLocationDemoView.swift in Sources */,
@@ -2542,6 +2565,7 @@
 				4478E469288F9BB300BDD67E /* SliderDemoView.swift in Sources */,
 				EF6E7F6F27D73D2600681368 /* SHFontWrapper.swift in Sources */,
 				30A9035029A4C32B00E18CC8 /* SwiftUIAnimationsView.swift in Sources */,
+				3047207E2A2484FC0081E028 /* MetalTrangleView.swift in Sources */,
 				EFCB24F927D5E1B600A77175 /* WidgetMeidumPostionView.swift in Sources */,
 				30A9035E29A4CFCD00E18CC8 /* SwiftUIEnvironmentValuesView.swift in Sources */,
 				44ADD14C27EDC03B0023C25B /* OrientationHelper.swift in Sources */,
@@ -2623,6 +2647,7 @@
 				EF9E0591285B176600A712BF /* UITextFieldDemoController.swift in Sources */,
 				EF8AC8DF2791527A00FF227E /* Store.swift in Sources */,
 				44ADD11C27EDA39D0023C25B /* SHAVPlayerView.swift in Sources */,
+				3047207B2A246DC70081E028 /* MetalRenderer.swift in Sources */,
 				2B020C5D2791DB2F000797F5 /* CGLineJoin+Extension.swift in Sources */,
 				EFF24CE8286BFCD2005AEC31 /* FrameworkHomeView.swift in Sources */,
 				2B15D6EB275B1C8300034697 /* SUIPHPicker.swift in Sources */,
@@ -2740,6 +2765,7 @@
 				EF596883274C8176003D88F6 /* CryptoHelper.swift in Sources */,
 				3025C6F129CD7EA100CFE638 /* SFSymbolsView.swift in Sources */,
 				4478E49C28935F2F00BDD67E /* SHIPInfoView.swift in Sources */,
+				307331902A2341CE00DEF768 /* Shaders.metal in Sources */,
 				44C8C0E228144509002E6621 /* SHSnapCarouselPicker.swift in Sources */,
 				30E976102A0991EE00A074EC /* BundleView.swift in Sources */,
 				30C2BD862A11396D00F07CA1 /* ImageIOFrameworkView.swift in Sources */,
@@ -2758,6 +2784,7 @@
 				44254FB0281D2C6A0074980B /* AppAction.swift in Sources */,
 				EF80EB2B2796FF15006F285C /* AppStoreHelper.swift in Sources */,
 				30A9034829A4C2C600E18CC8 /* SwiftUITableViewView.swift in Sources */,
+				3047207F2A2484FC0081E028 /* MetalTrangleView.swift in Sources */,
 				4478E462288F94B400BDD67E /* AnimationSpringDemoView.swift in Sources */,
 				30A9034E29A4C32500E18CC8 /* SwiftUIButtonView.swift in Sources */,
 				4459CC02281DAD5500EBC53A /* CGSize+Extention.swift in Sources */,
@@ -2826,6 +2853,7 @@
 				4478E455288D33C600BDD67E /* AlertDemoView.swift in Sources */,
 				EF9B979C27F1591D004FD118 /* FoundationFrameworkView.swift in Sources */,
 				3025C6F729CD924B00CFE638 /* MLMultiArrayDataType+Extension.swift in Sources */,
+				3047207C2A246DC70081E028 /* MetalRenderer.swift in Sources */,
 				30B498FA29C853760084782A /* VisionFrameworkView.swift in Sources */,
 				2B15D6EC275B1C8300034697 /* SUIPHPicker.swift in Sources */,
 				EF8AC8DA2791526100FF227E /* AppCommand.swift in Sources */,

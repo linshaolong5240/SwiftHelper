@@ -110,7 +110,7 @@ protocol CPViewControllerRepresent: CPViewControllerRepresentable {
     associatedtype ViewControllerType = Self.UIViewControllerType
 #endif
     func makeViewController(context: Self.Context) -> ViewControllerType
-    func updateViewController(_ viewController: ViewControllerType, context: Self.Context)
+    func updateViewController(_ viewController: Self.ViewControllerType, context: Self.Context)
 }
 
 extension CPViewControllerRepresent {
@@ -152,24 +152,3 @@ public struct PlatformViewControllerRepresent: CPViewControllerRepresent {
 
     }
 }
-
-//#if canImport(UIKit)
-//@available(iOS 13.0, tvOS 13.0, *)
-//@available(macOS, unavailable)
-//@available(watchOS, unavailable)
-//public struct PlatformViewControllerRepresent: UIViewControllerRepresentable {
-//    public let viewController: UIViewController
-//    
-//    public init(_ viewController: UIViewController) {
-//        self.viewController = viewController
-//    }
-//    
-//    public func makeUIViewController(context: Context) -> UIViewController {
-//        return viewController
-//    }
-//    
-//    public func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-//        
-//    }
-//}
-//#endif

@@ -1,16 +1,15 @@
 //
-//  MetalRenderer.swift
+//  MetalTrangleRenderer.swift
 //  SwiftHelper
 //
-//  Created by 林少龙 on 2023/5/29.
+//  Created by sauron on 2023/5/29.
 //  Copyright © 2023 com.sauronpi. All rights reserved.
 //
 
 import Foundation
 import MetalKit
 
-public class MetalRenderer: NSObject, MTKViewDelegate {
-    
+public class MetalTrangleRenderer: NSObject, MTKViewDelegate {
     private var device: MTLDevice
     private var drawableSize: vector_uint2
     private var pipelineState: MTLRenderPipelineState
@@ -42,6 +41,7 @@ public class MetalRenderer: NSObject, MTKViewDelegate {
             return nil
         }
         self.commandQueue = commandQueue
+        super.init()
     }
     
     deinit {

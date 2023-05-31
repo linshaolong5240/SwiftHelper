@@ -13,10 +13,12 @@ struct MetalFrameworkView: View {
         NavigationStack {
             List {
                 NavigationLink("Metal Content") {
-                    MetalContentView()
+//                    MetalContentView()
+                    PlatformViewControllerRepresent(MetalContentViewController())
                 }
                 NavigationLink("Trangle") {
-                    MetalTrangleView()
+//                    MetalTrangleView()
+                    PlatformViewControllerRepresent(MetalTrangleViewController())
                         .overlay {
                             GeometryReader { geometry in
                                 Text("width:\(geometry.size.width), height:\(geometry.size.height)")

@@ -16,8 +16,8 @@ public class MetalCompute {
     public var buffer0: MTLBuffer?
     public var buffer1: MTLBuffer?
     public var buffer2: MTLBuffer?
-    private var length: Int = 1000//* 1 << 24
-    private var dataLength: Int = MemoryLayout<Float>.size * 1000//* 1 << 24
+    private var arrayLength: Int = 1000//* 1 << 24
+    private var bufferLength: Int = MemoryLayout<Float>.size * 1000//* 1 << 24
     
     init?(device: MTLDevice) {
         guard let library = device.makeDefaultLibrary() else {
@@ -62,14 +62,14 @@ public class MetalCompute {
             }
         }
         
-        buffer0 = device.makeBuffer(length: dataLength, options: [.storageModeShared])
-        buffer1 = device.makeBuffer(length: dataLength, options: [.storageModeShared])
-        buffer2 = device.makeBuffer(length: dataLength, options: [.storageModeShared])
+        buffer0 = device.makeBuffer(length: bufferLength, options: [.storageModeShared])
+        buffer1 = device.makeBuffer(length: bufferLength, options: [.storageModeShared])
+        buffer2 = device.makeBuffer(length: bufferLength, options: [.storageModeShared])
         if let buffer = buffer0 {
-            generateData(buffer: buffer, length: length)
+            generateData(buffer: buffer, length: arrayLength)
         }
         if let buffer = buffer1 {
-            generateData(buffer: buffer, length: length)
+            generateData(buffer: buffer, length: arrayLength)
         }
     }
     
@@ -91,16 +91,16 @@ public class MetalCompute {
     }
     
     public func verifyResult() {
-        guard let a = buffer0?.contents().bindMemory(to: Float.self, capacity: dataLength) else {
+        guard let a = buffer0?.contents().bindMemory(to: Float.self, capacity: bufferLength) else {
             return
         }
-        guard let b = buffer1?.contents().bindMemory(to: Float.self, capacity: dataLength) else {
+        guard let b = buffer1?.contents().bindMemory(to: Float.self, capacity: bufferLength) else {
             return
         }
-        guard let c = buffer2?.contents().bindMemory(to: Float.self, capacity: dataLength) else {
+        guard let c = buffer2?.contents().bindMemory(to: Float.self, capacity: bufferLength) else {
             return
         }
-        for i in 0..<length {
+        for i in 0..<arrayLength {
             if c[i] != a[i] + b[i] {
 #if DEBUG
                 print("Compute ERROR: index=\(i) result=\(c[i]) vs \(a[i] + b[i])=a+b\n")
@@ -118,8 +118,8 @@ public class MetalCompute {
         encoder.setBuffer(buffer0, offset: 0, index: 0)
         encoder.setBuffer(buffer1, offset: 0, index: 1)
         encoder.setBuffer(buffer2, offset: 0, index: 2)
-        let gridSize = MTLSize(width: dataLength, height: 1, depth: 1)
-        let maxthreadGroupSize = min(pipelineState.maxTotalThreadsPerThreadgroup, dataLength)
+        let gridSize = MTLSize(width: arrayLength, height: 1, depth: 1)
+        let maxthreadGroupSize = min(pipelineState.maxTotalThreadsPerThreadgroup, arrayLength)
         
         let groupSize = MTLSize(width: maxthreadGroupSize, height: 1, depth: 1)
         

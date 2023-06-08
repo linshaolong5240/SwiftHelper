@@ -1,5 +1,5 @@
 //
-//  MetalAdderViewController.swift
+//  MetalComputeViewController.swift
 //  SwiftHelper
 //
 //  Created by sauron on 2023/5/31.
@@ -10,7 +10,7 @@ import SwiftUI
 import MetalKit
 import SnapKit
 
-class MetalAdderViewController: CPViewController {
+class MetalComputeViewController: CPViewController {
     private var metalCompute: MetalCompute?
     private var isMetalInit: Bool = false
     

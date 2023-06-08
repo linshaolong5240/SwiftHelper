@@ -130,8 +130,8 @@
 		304720902A27379F0081E028 /* MetalTextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208E2A27379F0081E028 /* MetalTextureViewController.swift */; };
 		304720922A2738150081E028 /* MetalTextureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720912A2738150081E028 /* MetalTextureRenderer.swift */; };
 		304720932A2738150081E028 /* MetalTextureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720912A2738150081E028 /* MetalTextureRenderer.swift */; };
-		304720952A273B190081E028 /* MetalAdderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720942A273B190081E028 /* MetalAdderViewController.swift */; };
-		304720962A273B190081E028 /* MetalAdderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720942A273B190081E028 /* MetalAdderViewController.swift */; };
+		304720952A273B190081E028 /* MetalComputeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720942A273B190081E028 /* MetalComputeViewController.swift */; };
+		304720962A273B190081E028 /* MetalComputeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720942A273B190081E028 /* MetalComputeViewController.swift */; };
 		304720982A273CE30081E028 /* ComputeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 304720972A273CE30081E028 /* ComputeShader.metal */; };
 		304720992A273CE30081E028 /* ComputeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 304720972A273CE30081E028 /* ComputeShader.metal */; };
 		3051DF7429FD49CA000BB569 /* SwiftUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */; };
@@ -656,7 +656,7 @@
 		3047208B2A2731410081E028 /* MetalTrangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTrangleViewController.swift; sourceTree = "<group>"; };
 		3047208E2A27379F0081E028 /* MetalTextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewController.swift; sourceTree = "<group>"; };
 		304720912A2738150081E028 /* MetalTextureRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureRenderer.swift; sourceTree = "<group>"; };
-		304720942A273B190081E028 /* MetalAdderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalAdderViewController.swift; sourceTree = "<group>"; };
+		304720942A273B190081E028 /* MetalComputeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalComputeViewController.swift; sourceTree = "<group>"; };
 		304720972A273CE30081E028 /* ComputeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeShader.metal; sourceTree = "<group>"; };
 		3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIPickerView.swift; path = Shared/View/Framework/AppFrameworks/SwiftUI/Controls/SwiftUIPickerView.swift; sourceTree = SOURCE_ROOT; };
 		3051DF7629FE52C1000BB569 /* SearchPathDomainMask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPathDomainMask+Extension.swift"; sourceTree = "<group>"; };
@@ -1298,8 +1298,21 @@
 			isa = PBXGroup;
 			children = (
 				303804092A3254E10057FBF6 /* MetalCompute.swift */,
+				304720912A2738150081E028 /* MetalTextureRenderer.swift */,
+				3047207A2A246DC70081E028 /* MetalTrangleRenderer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3038040C2A3262BA0057FBF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				304720942A273B190081E028 /* MetalComputeViewController.swift */,
+				304720802A271DC20081E028 /* MetalContentViewController.swift */,
+				3047208E2A27379F0081E028 /* MetalTextureViewController.swift */,
+				3047208B2A2731410081E028 /* MetalTrangleViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		303C0EF729A5D88100ECEB63 /* TextInputAndOutput */ = {
@@ -1357,16 +1370,11 @@
 		3073318D2A2341B100DEF768 /* Metal */ = {
 			isa = PBXGroup;
 			children = (
-				303804082A3254A90057FBF6 /* Model */,
 				307331912A23426F00DEF768 /* ShaderTypes.h */,
 				304720972A273CE30081E028 /* ComputeShader.metal */,
 				3073318E2A2341CE00DEF768 /* Shaders.metal */,
-				304720942A273B190081E028 /* MetalAdderViewController.swift */,
-				304720802A271DC20081E028 /* MetalContentViewController.swift */,
-				304720912A2738150081E028 /* MetalTextureRenderer.swift */,
-				3047208E2A27379F0081E028 /* MetalTextureViewController.swift */,
-				3047207A2A246DC70081E028 /* MetalTrangleRenderer.swift */,
-				3047208B2A2731410081E028 /* MetalTrangleViewController.swift */,
+				303804082A3254A90057FBF6 /* Model */,
+				3038040C2A3262BA0057FBF6 /* View */,
 			);
 			path = Metal;
 			sourceTree = "<group>";
@@ -2794,7 +2802,7 @@
 				18A91971295D7681001B473B /* ImageSaver.swift in Sources */,
 				307DFA302A158E66004E0F8D /* OnDropExampleView.swift in Sources */,
 				183BB65C2978F21A00C1D58D /* SUIColor.swift in Sources */,
-				304720952A273B190081E028 /* MetalAdderViewController.swift in Sources */,
+				304720952A273B190081E028 /* MetalComputeViewController.swift in Sources */,
 				30A9035329A4C54C00E18CC8 /* SwiftUIMenusAndCommandsView.swift in Sources */,
 				EF9B58D2279173E400E6C6ED /* SHLinearGradientCrossView.swift in Sources */,
 				182FFFA328F7A62800F0BCD5 /* UITableViewDemoCell.swift in Sources */,
@@ -2842,7 +2850,7 @@
 				44C8C0E228144509002E6621 /* SHSnapCarouselPicker.swift in Sources */,
 				30E976102A0991EE00A074EC /* BundleView.swift in Sources */,
 				30C2BD862A11396D00F07CA1 /* ImageIOFrameworkView.swift in Sources */,
-				304720962A273B190081E028 /* MetalAdderViewController.swift in Sources */,
+				304720962A273B190081E028 /* MetalComputeViewController.swift in Sources */,
 				EF596886274C821B003D88F6 /* UIKitHelper.swift in Sources */,
 				30E9760A2A098C8D00A074EC /* SPCurrentAppIconView.swift in Sources */,
 				EFE87175277B2C8100EB5CDE /* URLHelper.swift in Sources */,

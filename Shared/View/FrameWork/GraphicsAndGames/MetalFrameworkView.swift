@@ -13,7 +13,7 @@ struct MetalFrameworkView: View {
         NavigationStack {
             List {
                 NavigationLink("Adder") {
-                    PlatformViewControllerRepresent(MetalAdderViewController())
+                    PlatformViewControllerRepresent(MetalComputeViewController())
                 }
                 NavigationLink("Metal Content") {
 //                    MetalContentView()

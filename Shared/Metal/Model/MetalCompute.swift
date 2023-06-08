@@ -84,6 +84,11 @@ public class MetalCompute {
         
         encoderAddCommand(encoder: encoder)
         encoder.endEncoding()
+        commandBuffer.addCompletedHandler { buffer in
+#if DEBUG
+            print("Metal compute completed")
+#endif
+        }
         commandBuffer.commit()
         // Normally, you want to do other work in your app while the GPU is running,
         // but in this example, the code simply blocks until the calculation is complete.

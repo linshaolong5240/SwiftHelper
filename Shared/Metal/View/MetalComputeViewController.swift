@@ -24,7 +24,7 @@ class MetalComputeViewController: CPViewController {
         super.viewDidLoad()
         // Do view setup here.
         
-        let button = CPButton(title: "Calculate on GPU", target: self, action: #selector(calculate))
+        let button = CPButton(title: "Compute on GPU", target: self, action: #selector(compute))
         self.view.addSubview(button)
         button.snp.makeConstraints { make in
             make.center.equalToSuperview()
@@ -47,7 +47,7 @@ class MetalComputeViewController: CPViewController {
         self.metalCompute?.prepareData()
     }
     
-    @objc func calculate() {
+    @objc func compute() {
         #if DEBUG
         print("\(Self.self) \(#function)")
         #endif

@@ -20,6 +20,8 @@ public typealias CPView = NSView
 public typealias CPViewController = NSViewController
 public typealias CPViewRepresentable = NSViewRepresentable
 public typealias CPViewControllerRepresentable = NSViewControllerRepresentable
+
+public typealias CPButton = NSButton
 #endif
 
 #if canImport(UIKit)
@@ -34,6 +36,8 @@ public typealias CPView = UIView
 public typealias CPViewController = UIViewController
 public typealias CPViewRepresentable = UIViewRepresentable
 public typealias CPViewControllerRepresentable = UIViewControllerRepresentable
+
+public typealias CPButton = UIButton
 #endif
 
 extension Image {

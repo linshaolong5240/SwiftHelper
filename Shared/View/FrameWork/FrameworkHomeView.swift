@@ -33,6 +33,9 @@ struct FrameworkHomeView: View {
                 NavigationLink("Foundation") {
                     FoundationFrameworkView()
                 }
+                NavigationLink("Swift") {
+                    SwiftFrameworkView()
+                }
                 NavigationLink("SwiftUI") {
                     SwiftUIFrameworkView()
                 }

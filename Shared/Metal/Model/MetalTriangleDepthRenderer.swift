@@ -94,9 +94,9 @@ class MetalTriangleDepthRenderer: NSObject, MTKViewDelegate {
         ]
         
         let triangleVertices: [SPVertex] = [
-            SPVertex(position: vector_float4(width / 2, height - 100, topDepth, 0), color: vector_float4(1, 1, 1, 1)),
-            SPVertex(position: vector_float4(100, 100, lefDepth, 0), color: vector_float4(1, 1, 1, 1)),
-            SPVertex(position: vector_float4(width - 100, 100, rightDepth, 0), color: vector_float4(1, 1, 1, 1)),
+            SPVertex(position: vector_float4(width / 2, height - 100, topDepth, 0), color: vector_float4(1, 0, 0, 1)),
+            SPVertex(position: vector_float4(100, 100, lefDepth, 0), color: vector_float4(0, 1, 0, 1)),
+            SPVertex(position: vector_float4(width - 100, 100, rightDepth, 0), color: vector_float4(0, 0, 1, 1)),
         ]
         
         guard let renderPassDescriptor = view.currentRenderPassDescriptor else {

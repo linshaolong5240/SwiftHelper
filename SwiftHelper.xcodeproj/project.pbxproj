@@ -106,6 +106,12 @@
 		303804072A3241F10057FBF6 /* SwiftMemoryLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804052A3241F10057FBF6 /* SwiftMemoryLayoutView.swift */; };
 		3038040A2A3254E10057FBF6 /* MetalCompute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804092A3254E10057FBF6 /* MetalCompute.swift */; };
 		3038040B2A3254E10057FBF6 /* MetalCompute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804092A3254E10057FBF6 /* MetalCompute.swift */; };
+		303804142A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */; };
+		303804152A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */; };
+		303804182A3278C40057FBF6 /* MetalDepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804172A3278C40057FBF6 /* MetalDepthView.swift */; };
+		303804192A3278C40057FBF6 /* MetalDepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804172A3278C40057FBF6 /* MetalDepthView.swift */; };
+		3038041B2A3503680057FBF6 /* SwiftUISliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */; };
+		3038041C2A3503680057FBF6 /* SwiftUISliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */; };
 		303C0EF929A5D8D900ECEB63 /* SwiftUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */; };
 		303C0EFA29A5D8D900ECEB63 /* SwiftUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */; };
 		303C0EFD29A5DC5A00ECEB63 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0EFC29A5DC5A00ECEB63 /* SwiftUIListView.swift */; };
@@ -118,16 +124,14 @@
 		303E98CC29C15FC100B4B462 /* TechnologySpecificViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */; };
 		303E98CE29C1601200B4B462 /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CD29C1601200B4B462 /* PhotosPickerView.swift */; };
 		303E98CF29C1601200B4B462 /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CD29C1601200B4B462 /* PhotosPickerView.swift */; };
-		3047207B2A246DC70081E028 /* MetalTrangleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207A2A246DC70081E028 /* MetalTrangleRenderer.swift */; };
-		3047207C2A246DC70081E028 /* MetalTrangleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207A2A246DC70081E028 /* MetalTrangleRenderer.swift */; };
+		3047207B2A246DC70081E028 /* MetalTriangleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */; };
+		3047207C2A246DC70081E028 /* MetalTriangleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */; };
 		304720812A271DC20081E028 /* MetalContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720802A271DC20081E028 /* MetalContentViewController.swift */; };
 		304720822A271DC20081E028 /* MetalContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720802A271DC20081E028 /* MetalContentViewController.swift */; };
 		304720862A2721380081E028 /* NSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720852A2721380081E028 /* NSBaseViewController.swift */; };
 		304720882A2724360081E028 /* NSBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720872A2724360081E028 /* NSBaseView.swift */; };
-		3047208C2A2731410081E028 /* MetalTrangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208B2A2731410081E028 /* MetalTrangleViewController.swift */; };
-		3047208D2A2731410081E028 /* MetalTrangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208B2A2731410081E028 /* MetalTrangleViewController.swift */; };
-		3047208F2A27379F0081E028 /* MetalTextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208E2A27379F0081E028 /* MetalTextureViewController.swift */; };
-		304720902A27379F0081E028 /* MetalTextureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208E2A27379F0081E028 /* MetalTextureViewController.swift */; };
+		3047208C2A2731410081E028 /* MetalTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208B2A2731410081E028 /* MetalTriangleViewController.swift */; };
+		3047208D2A2731410081E028 /* MetalTriangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047208B2A2731410081E028 /* MetalTriangleViewController.swift */; };
 		304720922A2738150081E028 /* MetalTextureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720912A2738150081E028 /* MetalTextureRenderer.swift */; };
 		304720932A2738150081E028 /* MetalTextureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720912A2738150081E028 /* MetalTextureRenderer.swift */; };
 		304720952A273B190081E028 /* MetalComputeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720942A273B190081E028 /* MetalComputeViewController.swift */; };
@@ -643,18 +647,20 @@
 		303804022A3241C50057FBF6 /* SwiftFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftFrameworkView.swift; path = Shared/View/FrameWork/AppFrameworks/Swift/SwiftFrameworkView.swift; sourceTree = SOURCE_ROOT; };
 		303804052A3241F10057FBF6 /* SwiftMemoryLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftMemoryLayoutView.swift; path = Shared/View/FrameWork/AppFrameworks/Swift/SwiftMemoryLayoutView.swift; sourceTree = SOURCE_ROOT; };
 		303804092A3254E10057FBF6 /* MetalCompute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCompute.swift; sourceTree = "<group>"; };
+		303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTriangleDepthRenderer.swift; sourceTree = "<group>"; };
+		303804172A3278C40057FBF6 /* MetalDepthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDepthView.swift; sourceTree = "<group>"; };
+		3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUISliderView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Controls/SwiftUISliderView.swift; sourceTree = SOURCE_ROOT; };
 		303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextView.swift; sourceTree = SOURCE_ROOT; };
 		303C0EFC29A5DC5A00ECEB63 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIListView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/ViewLayout/SwiftUIListView.swift; sourceTree = SOURCE_ROOT; };
 		303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextFieldView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextFieldView.swift; sourceTree = SOURCE_ROOT; };
 		303C0F0329A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextInputAndOutputView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextInputAndOutputView.swift; sourceTree = SOURCE_ROOT; };
 		303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TechnologySpecificViews.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/TechnologySpecificViews/TechnologySpecificViews.swift; sourceTree = SOURCE_ROOT; };
 		303E98CD29C1601200B4B462 /* PhotosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosPickerView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/TechnologySpecificViews/PhotosPickerView.swift; sourceTree = SOURCE_ROOT; };
-		3047207A2A246DC70081E028 /* MetalTrangleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTrangleRenderer.swift; sourceTree = "<group>"; };
+		3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTriangleRenderer.swift; sourceTree = "<group>"; };
 		304720802A271DC20081E028 /* MetalContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalContentViewController.swift; sourceTree = "<group>"; };
 		304720852A2721380081E028 /* NSBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBaseViewController.swift; sourceTree = "<group>"; };
 		304720872A2724360081E028 /* NSBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBaseView.swift; sourceTree = "<group>"; };
-		3047208B2A2731410081E028 /* MetalTrangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTrangleViewController.swift; sourceTree = "<group>"; };
-		3047208E2A27379F0081E028 /* MetalTextureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureViewController.swift; sourceTree = "<group>"; };
+		3047208B2A2731410081E028 /* MetalTriangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTriangleViewController.swift; sourceTree = "<group>"; };
 		304720912A2738150081E028 /* MetalTextureRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureRenderer.swift; sourceTree = "<group>"; };
 		304720942A273B190081E028 /* MetalComputeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalComputeViewController.swift; sourceTree = "<group>"; };
 		304720972A273CE30081E028 /* ComputeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeShader.metal; sourceTree = "<group>"; };
@@ -1299,7 +1305,8 @@
 			children = (
 				303804092A3254E10057FBF6 /* MetalCompute.swift */,
 				304720912A2738150081E028 /* MetalTextureRenderer.swift */,
-				3047207A2A246DC70081E028 /* MetalTrangleRenderer.swift */,
+				303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */,
+				3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1309,10 +1316,20 @@
 			children = (
 				304720942A273B190081E028 /* MetalComputeViewController.swift */,
 				304720802A271DC20081E028 /* MetalContentViewController.swift */,
-				3047208E2A27379F0081E028 /* MetalTextureViewController.swift */,
-				3047208B2A2731410081E028 /* MetalTrangleViewController.swift */,
+				303804172A3278C40057FBF6 /* MetalDepthView.swift */,
+				3047208B2A2731410081E028 /* MetalTriangleViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		303804162A32755C0057FBF6 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				307331912A23426F00DEF768 /* ShaderTypes.h */,
+				304720972A273CE30081E028 /* ComputeShader.metal */,
+				3073318E2A2341CE00DEF768 /* Shaders.metal */,
+			);
+			path = Shader;
 			sourceTree = "<group>";
 		};
 		303C0EF729A5D88100ECEB63 /* TextInputAndOutput */ = {
@@ -1370,9 +1387,7 @@
 		3073318D2A2341B100DEF768 /* Metal */ = {
 			isa = PBXGroup;
 			children = (
-				307331912A23426F00DEF768 /* ShaderTypes.h */,
-				304720972A273CE30081E028 /* ComputeShader.metal */,
-				3073318E2A2341CE00DEF768 /* Shaders.metal */,
+				303804162A32755C0057FBF6 /* Shader */,
 				303804082A3254A90057FBF6 /* Model */,
 				3038040C2A3262BA0057FBF6 /* View */,
 			);
@@ -1410,6 +1425,7 @@
 				30A9034A29A4C32500E18CC8 /* SwiftUIButtonView.swift */,
 				3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */,
 				309F49402A1571F8000444A8 /* DisclosureGroupExampleView.swift */,
+				3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -2550,7 +2566,6 @@
 				44ADD15F27EE02020023C25B /* SHWidgetKind.swift in Sources */,
 				188F2AA7290BD20A0046FB65 /* SHValueStepperDemoController.swift in Sources */,
 				30D075AC29E1AD0C00B09488 /* NetworkFrameworkView.swift in Sources */,
-				3047208F2A27379F0081E028 /* MetalTextureViewController.swift in Sources */,
 				18A91974295D77A8001B473B /* PhotoLibraryHelper.swift in Sources */,
 				183BB65F2978F78900C1D58D /* SUILableSwitcherTableViewCell.swift in Sources */,
 				EFF3890F27BB7A4D00304896 /* SPWebView.swift in Sources */,
@@ -2595,6 +2610,7 @@
 				EF4A38A02858575700332E07 /* UICollectionViewDemoFooterView.swift in Sources */,
 				30E976092A098C8D00A074EC /* SPCurrentAppIconView.swift in Sources */,
 				EF9008BA2851955900533A4A /* AttributedStringDemoController.swift in Sources */,
+				3038041B2A3503680057FBF6 /* SwiftUISliderView.swift in Sources */,
 				188889C029514E6B003933C4 /* UISegmentedControlDemoViewController.swift in Sources */,
 				EF773B5228446269005D2515 /* UIScrollViewDemoController.swift in Sources */,
 				EF596885274C821B003D88F6 /* UIKitHelper.swift in Sources */,
@@ -2666,6 +2682,7 @@
 				EFF42F6E27BE260A0017E635 /* SPSettingView.swift in Sources */,
 				4478E488289319C500BDD67E /* SHDEBUGView.swift in Sources */,
 				EF85008A27709C92009AAA4C /* CrossPlatformHelper.swift in Sources */,
+				303804142A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */,
 				EF9B97A727F1A576004FD118 /* LocaleHelperView.swift in Sources */,
 				EFB4625F281240390024610E /* SHScrollFloatSegmentView.swift in Sources */,
 				18A91969295D3B70001B473B /* SHQRCodeGenerateiew.swift in Sources */,
@@ -2694,7 +2711,7 @@
 				4478E484289317DE00BDD67E /* SHSidebarNavigationView.swift in Sources */,
 				EF8AC8CB27914D6100FF227E /* AFAPIServer.swift in Sources */,
 				303E98CE29C1601200B4B462 /* PhotosPickerView.swift in Sources */,
-				3047208C2A2731410081E028 /* MetalTrangleViewController.swift in Sources */,
+				3047208C2A2731410081E028 /* MetalTriangleViewController.swift in Sources */,
 				EF6E7F6727D7347300681368 /* SHWidgetEntryParseView.swift in Sources */,
 				EF6E7F7327D73DA300681368 /* SHWidgetTheme.swift in Sources */,
 				184EE9C82972CA9700A580D9 /* SHCommentReplyTaleViewCellData.swift in Sources */,
@@ -2724,7 +2741,7 @@
 				EF9E0591285B176600A712BF /* UITextFieldDemoController.swift in Sources */,
 				EF8AC8DF2791527A00FF227E /* Store.swift in Sources */,
 				44ADD11C27EDA39D0023C25B /* SHAVPlayerView.swift in Sources */,
-				3047207B2A246DC70081E028 /* MetalTrangleRenderer.swift in Sources */,
+				3047207B2A246DC70081E028 /* MetalTriangleRenderer.swift in Sources */,
 				2B020C5D2791DB2F000797F5 /* CGLineJoin+Extension.swift in Sources */,
 				EFF24CE8286BFCD2005AEC31 /* FrameworkHomeView.swift in Sources */,
 				2B15D6EB275B1C8300034697 /* SUIPHPicker.swift in Sources */,
@@ -2775,6 +2792,7 @@
 				EF55104427D84866003BF2AA /* WidgetEditView.swift in Sources */,
 				30C2BD932A142B7500F07CA1 /* ContentMode+Extension.swift in Sources */,
 				301C473329E3574B004B56BE /* NetworkPathMonitor.swift in Sources */,
+				303804182A3278C40057FBF6 /* MetalDepthView.swift in Sources */,
 				2B15D6E4275B0FEC00034697 /* SHPageTabView.swift in Sources */,
 				EF79FDD828261A6900CBB68D /* SHGifWidgetView.swift in Sources */,
 				EF4373B327D07062002E1322 /* WidgetSmallPositionView.swift in Sources */,
@@ -2844,6 +2862,7 @@
 				303E98CF29C1601200B4B462 /* PhotosPickerView.swift in Sources */,
 				EF34568B278D9F6700997552 /* BundleHelper.swift in Sources */,
 				EF596883274C8176003D88F6 /* CryptoHelper.swift in Sources */,
+				303804192A3278C40057FBF6 /* MetalDepthView.swift in Sources */,
 				3025C6F129CD7EA100CFE638 /* SFSymbolsView.swift in Sources */,
 				4478E49C28935F2F00BDD67E /* SHIPInfoView.swift in Sources */,
 				307331902A2341CE00DEF768 /* Shaders.metal in Sources */,
@@ -2858,7 +2877,6 @@
 				EFE4552E2792BA8200EC945A /* AnalogClockHelper.swift in Sources */,
 				4478E46A288F9BB300BDD67E /* SliderDemoView.swift in Sources */,
 				EFF24CFA286C455F005AEC31 /* SQLiteSwiftDemoView.swift in Sources */,
-				304720902A27379F0081E028 /* MetalTextureViewController.swift in Sources */,
 				EF947384281AE57100D8F812 /* SHChatView.swift in Sources */,
 				304720932A2738150081E028 /* MetalTextureRenderer.swift in Sources */,
 				2B15D6EF275B269800034697 /* SHDashView.swift in Sources */,
@@ -2883,6 +2901,7 @@
 				30B498F729C853100084782A /* VisonDeeplabV3View.swift in Sources */,
 				EF9B97A827F1A576004FD118 /* LocaleHelperView.swift in Sources */,
 				EF6E7F4027D6F85C00681368 /* SwiftHelperWidget.intentdefinition in Sources */,
+				3038041C2A3503680057FBF6 /* SwiftUISliderView.swift in Sources */,
 				448557D228B21D2200DAAC0F /* SHURLQueryItemEncoding.swift in Sources */,
 				44ADD19127EF733E0023C25B /* CalendarHelperView.swift in Sources */,
 				4478E45F288F703500BDD67E /* SHRollingNumber.swift in Sources */,
@@ -2941,7 +2960,7 @@
 				4478E455288D33C600BDD67E /* AlertDemoView.swift in Sources */,
 				EF9B979C27F1591D004FD118 /* FoundationFrameworkView.swift in Sources */,
 				3025C6F729CD924B00CFE638 /* MLMultiArrayDataType+Extension.swift in Sources */,
-				3047207C2A246DC70081E028 /* MetalTrangleRenderer.swift in Sources */,
+				3047207C2A246DC70081E028 /* MetalTriangleRenderer.swift in Sources */,
 				30B498FA29C853760084782A /* VisionFrameworkView.swift in Sources */,
 				2B15D6EC275B1C8300034697 /* SUIPHPicker.swift in Sources */,
 				EF8AC8DA2791526100FF227E /* AppCommand.swift in Sources */,
@@ -2961,6 +2980,7 @@
 				309F49422A1571F8000444A8 /* DisclosureGroupExampleView.swift in Sources */,
 				EF69CD892832005500D2E003 /* DatePickerDemoView.swift in Sources */,
 				EF30649528115271002BBF4A /* SHTagListView.swift in Sources */,
+				303804152A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */,
 				4459CBF9281D50BB00EBC53A /* FileDocumentHelper.swift in Sources */,
 				30D075AD29E1AD0C00B09488 /* NetworkFrameworkView.swift in Sources */,
 				EF4CD9FF281015B200BD8536 /* SHRoundedCornersView.swift in Sources */,
@@ -2971,7 +2991,7 @@
 				303C0EFA29A5D8D900ECEB63 /* SwiftUITextView.swift in Sources */,
 				3031263529FBBBCE00374584 /* CoreImageFrameworkView.swift in Sources */,
 				EF596880274C7E52003D88F6 /* WidgetHelper.swift in Sources */,
-				3047208D2A2731410081E028 /* MetalTrangleViewController.swift in Sources */,
+				3047208D2A2731410081E028 /* MetalTriangleViewController.swift in Sources */,
 				2B020C5B2791D557000797F5 /* CGLineCap+Extension.swift in Sources */,
 				303C0F0529A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift in Sources */,
 				30544BF72A16F12400164B28 /* SPObjectiveCTest.m in Sources */,

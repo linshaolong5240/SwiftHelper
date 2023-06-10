@@ -1,5 +1,5 @@
 //
-//  MetalTrangleRenderer.swift
+//  MetalTriangleRenderer.swift
 //  SwiftHelper
 //
 //  Created by sauron on 2023/5/29.
@@ -9,7 +9,7 @@
 import Foundation
 import MetalKit
 
-public class MetalTrangleRenderer: NSObject, MTKViewDelegate {
+public class MetalTriangleRenderer: NSObject, MTKViewDelegate {
     private var device: MTLDevice
     private var drawableSize: vector_uint2
     private var pipelineState: MTLRenderPipelineState
@@ -62,10 +62,13 @@ public class MetalTrangleRenderer: NSObject, MTKViewDelegate {
 #if DEBUG
         print("\(Self.self) \(#function)" )
 #endif
+        let width = Float(drawableSize.x * UInt32(ScreenHelper.mainScale))
+        let height = Float(drawableSize.y * UInt32(ScreenHelper.mainScale))
+
         let triangleVertices: [SPVertex] = [
-            SPVertex(position: vector_float2(250, -250), color: vector_float4(1, 0, 0, 1)),
-            SPVertex(position: vector_float2(-250, -250), color: vector_float4(0, 1, 0, 1)),
-            SPVertex(position: vector_float2(0, sqrtf(250 * 250 * 2)), color: vector_float4(0, 0, 1, 1)),
+            SPVertex(position: vector_float4(width / 2, height - 100, 0, 0), color: vector_float4(1, 0, 0, 1)),
+            SPVertex(position: vector_float4(100, 100, 0, 0), color: vector_float4(0, 1, 0, 1)),
+            SPVertex(position: vector_float4(width - 100, 100, 0, 0), color: vector_float4(0, 0, 1, 1)),
         ]
         
         guard let renderPassDescriptor = view.currentRenderPassDescriptor else {

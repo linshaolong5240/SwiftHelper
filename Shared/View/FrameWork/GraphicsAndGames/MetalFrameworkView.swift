@@ -21,12 +21,15 @@ struct MetalFrameworkView: View {
                 }
                 NavigationLink("Trangle") {
 //                    MetalTrangleView()
-                    PlatformViewControllerRepresent(MetalTrangleViewController())
+                    PlatformViewControllerRepresent(MetalTriangleViewController())
                         .overlay {
                             GeometryReader { geometry in
                                 Text("width:\(geometry.size.width), height:\(geometry.size.height)")
                             }
                         }
+                }
+                NavigationLink("Trangle depth testing") {
+                    MetalDepthView()
                 }
             }
         }

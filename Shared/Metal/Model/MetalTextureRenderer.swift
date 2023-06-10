@@ -29,6 +29,7 @@ public class MetalTextureRenderer: NSObject, MTKViewDelegate {
         
         let pipelineStateDescriptor = MTLRenderPipelineDescriptor()
         pipelineStateDescriptor.label = "Simple Pipeline"
+        pipelineStateDescriptor.sampleCount = mtkView.sampleCount
         pipelineStateDescriptor.vertexFunction = vertexFunction
         pipelineStateDescriptor.fragmentFunction = fragmentFunction
         pipelineStateDescriptor.colorAttachments[0].pixelFormat = mtkView.colorPixelFormat
@@ -63,9 +64,9 @@ public class MetalTextureRenderer: NSObject, MTKViewDelegate {
         print("\(Self.self) \(#function)" )
 #endif
         let triangleVertices: [SPVertex] = [
-            SPVertex(position: vector_float2(250, -250), color: vector_float4(1, 0, 0, 1)),
-            SPVertex(position: vector_float2(-250, -250), color: vector_float4(0, 1, 0, 1)),
-            SPVertex(position: vector_float2(0, sqrtf(250 * 250 * 2)), color: vector_float4(0, 0, 1, 1)),
+            SPVertex(position: vector_float4(250, -250, 0, 0), color: vector_float4(1, 0, 0, 1)),
+            SPVertex(position: vector_float4(-250, -250, 0, 0), color: vector_float4(0, 1, 0, 1)),
+            SPVertex(position: vector_float4(0, sqrtf(250 * 250 * 2), 0, 0), color: vector_float4(0, 0, 1, 1)),
         ]
         
         guard let renderPassDescriptor = view.currentRenderPassDescriptor else {

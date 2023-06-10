@@ -1,5 +1,5 @@
 //
-//  MetalTextureViewController.swift
+//  MetalTriangleViewController.swift
 //  SwiftHelper
 //
 //  Created by sauron on 2023/5/31.
@@ -9,8 +9,10 @@
 import SwiftUI
 import MetalKit
 
-class MetalTextureViewController: CPViewController {
+class MetalTriangleViewController: CPViewController {
     
+    private var renderer: MetalTriangleRenderer?
+
 #if canImport(AppKit)
     override func loadView() {
         self.view = NSBaseView()
@@ -23,16 +25,15 @@ class MetalTextureViewController: CPViewController {
         let mtkView = MTKView()
         mtkView.enableSetNeedsDisplay = true
         mtkView.device = MTLCreateSystemDefaultDevice()
-//        self.renderer = MetalTrangleRenderer(mtkView: mtkView)
-//        mtkView.delegate = self.renderer
+        self.renderer = MetalTriangleRenderer(mtkView: mtkView)
+        mtkView.delegate = self.renderer
         
         self.view = mtkView
     }
-    
 }
 
-struct MetalTextureViewController_Previews: PreviewProvider {
+struct MetalTrangleViewController_Previews: PreviewProvider {
     static var previews: some View {
-        PlatformViewControllerRepresent(MetalTextureViewController())
+        PlatformViewControllerRepresent(MetalTriangleViewController())
     }
 }

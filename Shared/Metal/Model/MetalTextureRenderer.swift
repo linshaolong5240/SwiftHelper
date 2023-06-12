@@ -53,18 +53,6 @@ public class MetalTextureRenderer: NSObject, MTKViewDelegate {
             return nil
         }
         
-//        guard let image = CrossImage(named: "MetalTexture") else {
-//            return nil
-//        }
-//
-//        guard let cgImage = image.cgImage else {
-//            return nil
-//        }
-//
-//        guard let imageData = cgImage.makeData(to: .png) else {
-//            return nil
-//        }
-        
         let textureDescriptor = MTLTextureDescriptor()
         textureDescriptor.textureType = .type2D
         textureDescriptor.pixelFormat = .bgra8Unorm

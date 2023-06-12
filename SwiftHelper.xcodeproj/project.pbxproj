@@ -158,8 +158,8 @@
 		3060B49B2A3796E0002D48B4 /* MetaTextureComputeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4992A3796E0002D48B4 /* MetaTextureComputeView.swift */; };
 		3060B49D2A37AB9C002D48B4 /* TextureShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3060B49C2A37AB9C002D48B4 /* TextureShader.metal */; };
 		3060B49E2A37AB9C002D48B4 /* TextureShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3060B49C2A37AB9C002D48B4 /* TextureShader.metal */; };
-		3073318F2A2341CE00DEF768 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* Shaders.metal */; };
-		307331902A2341CE00DEF768 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* Shaders.metal */; };
+		3073318F2A2341CE00DEF768 /* VertexShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* VertexShaders.metal */; };
+		307331902A2341CE00DEF768 /* VertexShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* VertexShaders.metal */; };
 		307DFA2D2A1589A7004E0F8D /* FileImporterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */; };
 		307DFA2E2A1589A7004E0F8D /* FileImporterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */; };
 		307DFA302A158E66004E0F8D /* OnDropExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2F2A158E66004E0F8D /* OnDropExampleView.swift */; };
@@ -687,7 +687,7 @@
 		3060B4962A378526002D48B4 /* SPTGAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTGAImage.swift; sourceTree = "<group>"; };
 		3060B4992A3796E0002D48B4 /* MetaTextureComputeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaTextureComputeView.swift; sourceTree = "<group>"; };
 		3060B49C2A37AB9C002D48B4 /* TextureShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TextureShader.metal; sourceTree = "<group>"; };
-		3073318E2A2341CE00DEF768 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		3073318E2A2341CE00DEF768 /* VertexShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VertexShaders.metal; sourceTree = "<group>"; };
 		307331912A23426F00DEF768 /* SPShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPShaderTypes.h; sourceTree = "<group>"; };
 		307DB6112A16D88C0018CE70 /* SPObjectiveCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPObjectiveCTest.h; sourceTree = "<group>"; };
 		307DB6122A16D88C0018CE70 /* SPObjectiveCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPObjectiveCTest.m; sourceTree = "<group>"; };
@@ -1348,7 +1348,7 @@
 			children = (
 				307331912A23426F00DEF768 /* SPShaderTypes.h */,
 				304720972A273CE30081E028 /* ComputeShader.metal */,
-				3073318E2A2341CE00DEF768 /* Shaders.metal */,
+				3073318E2A2341CE00DEF768 /* VertexShaders.metal */,
 				3060B49C2A37AB9C002D48B4 /* TextureShader.metal */,
 			);
 			path = Shader;
@@ -2625,7 +2625,7 @@
 				1842659229973B79004D97B3 /* SHImageCollectionViewCell.swift in Sources */,
 				EF596872274C7905003D88F6 /* UserStorgeHelper.swift in Sources */,
 				EFC41CF227DAF2F4009E0C55 /* SHGuideWidgetView.swift in Sources */,
-				3073318F2A2341CE00DEF768 /* Shaders.metal in Sources */,
+				3073318F2A2341CE00DEF768 /* VertexShaders.metal in Sources */,
 				EF79FDDD282640E800CBB68D /* SHWidgetGifModelEditer.swift in Sources */,
 				EF677F9227C734C900C1F973 /* UICollectionHorizontalView.swift in Sources */,
 				4478E458288D5FE400BDD67E /* CoreLocationDemoView.swift in Sources */,
@@ -2916,7 +2916,7 @@
 				303804192A3278C40057FBF6 /* MetalDepthView.swift in Sources */,
 				3025C6F129CD7EA100CFE638 /* SFSymbolsView.swift in Sources */,
 				4478E49C28935F2F00BDD67E /* SHIPInfoView.swift in Sources */,
-				307331902A2341CE00DEF768 /* Shaders.metal in Sources */,
+				307331902A2341CE00DEF768 /* VertexShaders.metal in Sources */,
 				44C8C0E228144509002E6621 /* SHSnapCarouselPicker.swift in Sources */,
 				30E976102A0991EE00A074EC /* BundleView.swift in Sources */,
 				30C2BD862A11396D00F07CA1 /* ImageIOFrameworkView.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  MetaTextureComputeView.swift
+//  MetalTextureView.swift
 //  SwiftHelper
 //
 //  Created by sauron on 2023/6/13.
@@ -9,7 +9,7 @@
 import SwiftUI
 import MetalKit
 
-struct MetaTextureComputeView: CPViewRepresent {
+struct MetalTextureView: CPViewRepresent {
     
     func makeView(context: Context) -> MTKView {
         let mtkView = MTKView()
@@ -36,6 +36,6 @@ struct MetaTextureComputeView: CPViewRepresent {
 
 struct MetaTextureCompute_Previews: PreviewProvider {
     static var previews: some View {
-        MetaTextureComputeView()
+        MetalTextureView()
     }
 }

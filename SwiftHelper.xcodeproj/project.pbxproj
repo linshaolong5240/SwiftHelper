@@ -106,8 +106,8 @@
 		303804072A3241F10057FBF6 /* SwiftMemoryLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804052A3241F10057FBF6 /* SwiftMemoryLayoutView.swift */; };
 		3038040A2A3254E10057FBF6 /* MetalCompute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804092A3254E10057FBF6 /* MetalCompute.swift */; };
 		3038040B2A3254E10057FBF6 /* MetalCompute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804092A3254E10057FBF6 /* MetalCompute.swift */; };
-		303804142A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */; };
-		303804152A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */; };
+		303804142A3274930057FBF6 /* MetalDepthRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804132A3274930057FBF6 /* MetalDepthRenderer.swift */; };
+		303804152A3274930057FBF6 /* MetalDepthRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804132A3274930057FBF6 /* MetalDepthRenderer.swift */; };
 		303804182A3278C40057FBF6 /* MetalDepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804172A3278C40057FBF6 /* MetalDepthView.swift */; };
 		303804192A3278C40057FBF6 /* MetalDepthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303804172A3278C40057FBF6 /* MetalDepthView.swift */; };
 		3038041B2A3503680057FBF6 /* SwiftUISliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */; };
@@ -154,8 +154,8 @@
 		3060B4952A366AA1002D48B4 /* SPImage.c in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4932A366AA1002D48B4 /* SPImage.c */; };
 		3060B4972A378526002D48B4 /* SPTGAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4962A378526002D48B4 /* SPTGAImage.swift */; };
 		3060B4982A378526002D48B4 /* SPTGAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4962A378526002D48B4 /* SPTGAImage.swift */; };
-		3060B49A2A3796E0002D48B4 /* MetaTextureComputeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4992A3796E0002D48B4 /* MetaTextureComputeView.swift */; };
-		3060B49B2A3796E0002D48B4 /* MetaTextureComputeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4992A3796E0002D48B4 /* MetaTextureComputeView.swift */; };
+		3060B49A2A3796E0002D48B4 /* MetalTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4992A3796E0002D48B4 /* MetalTextureView.swift */; };
+		3060B49B2A3796E0002D48B4 /* MetalTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060B4992A3796E0002D48B4 /* MetalTextureView.swift */; };
 		3060B49D2A37AB9C002D48B4 /* TextureShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3060B49C2A37AB9C002D48B4 /* TextureShader.metal */; };
 		3060B49E2A37AB9C002D48B4 /* TextureShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3060B49C2A37AB9C002D48B4 /* TextureShader.metal */; };
 		3073318F2A2341CE00DEF768 /* VertexShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 3073318E2A2341CE00DEF768 /* VertexShaders.metal */; };
@@ -659,7 +659,7 @@
 		303804022A3241C50057FBF6 /* SwiftFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftFrameworkView.swift; path = Shared/View/FrameWork/AppFrameworks/Swift/SwiftFrameworkView.swift; sourceTree = SOURCE_ROOT; };
 		303804052A3241F10057FBF6 /* SwiftMemoryLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftMemoryLayoutView.swift; path = Shared/View/FrameWork/AppFrameworks/Swift/SwiftMemoryLayoutView.swift; sourceTree = SOURCE_ROOT; };
 		303804092A3254E10057FBF6 /* MetalCompute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCompute.swift; sourceTree = "<group>"; };
-		303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTriangleDepthRenderer.swift; sourceTree = "<group>"; };
+		303804132A3274930057FBF6 /* MetalDepthRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDepthRenderer.swift; sourceTree = "<group>"; };
 		303804172A3278C40057FBF6 /* MetalDepthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDepthView.swift; sourceTree = "<group>"; };
 		3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUISliderView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Controls/SwiftUISliderView.swift; sourceTree = SOURCE_ROOT; };
 		303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextView.swift; sourceTree = SOURCE_ROOT; };
@@ -685,7 +685,7 @@
 		3060B4922A366AA1002D48B4 /* SPImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPImage.h; sourceTree = "<group>"; };
 		3060B4932A366AA1002D48B4 /* SPImage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SPImage.c; sourceTree = "<group>"; };
 		3060B4962A378526002D48B4 /* SPTGAImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPTGAImage.swift; sourceTree = "<group>"; };
-		3060B4992A3796E0002D48B4 /* MetaTextureComputeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaTextureComputeView.swift; sourceTree = "<group>"; };
+		3060B4992A3796E0002D48B4 /* MetalTextureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureView.swift; sourceTree = "<group>"; };
 		3060B49C2A37AB9C002D48B4 /* TextureShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TextureShader.metal; sourceTree = "<group>"; };
 		3073318E2A2341CE00DEF768 /* VertexShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = VertexShaders.metal; sourceTree = "<group>"; };
 		307331912A23426F00DEF768 /* SPShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPShaderTypes.h; sourceTree = "<group>"; };
@@ -1324,8 +1324,8 @@
 			isa = PBXGroup;
 			children = (
 				303804092A3254E10057FBF6 /* MetalCompute.swift */,
+				303804132A3274930057FBF6 /* MetalDepthRenderer.swift */,
 				304720912A2738150081E028 /* MetalTextureRenderer.swift */,
-				303804132A3274930057FBF6 /* MetalTriangleDepthRenderer.swift */,
 				3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */,
 			);
 			path = Model;
@@ -1338,7 +1338,7 @@
 				304720802A271DC20081E028 /* MetalContentViewController.swift */,
 				303804172A3278C40057FBF6 /* MetalDepthView.swift */,
 				3047208B2A2731410081E028 /* MetalTriangleViewController.swift */,
-				3060B4992A3796E0002D48B4 /* MetaTextureComputeView.swift */,
+				3060B4992A3796E0002D48B4 /* MetalTextureView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2732,7 +2732,7 @@
 				EFF42F6E27BE260A0017E635 /* SPSettingView.swift in Sources */,
 				4478E488289319C500BDD67E /* SHDEBUGView.swift in Sources */,
 				EF85008A27709C92009AAA4C /* CrossPlatformHelper.swift in Sources */,
-				303804142A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */,
+				303804142A3274930057FBF6 /* MetalDepthRenderer.swift in Sources */,
 				EF9B97A727F1A576004FD118 /* LocaleHelperView.swift in Sources */,
 				EFB4625F281240390024610E /* SHScrollFloatSegmentView.swift in Sources */,
 				18A91969295D3B70001B473B /* SHQRCodeGenerateiew.swift in Sources */,
@@ -2755,7 +2755,7 @@
 				EF94BAB0282D0FF1008EA92B /* UIPictureInPictureViewController.swift in Sources */,
 				301C472F29E3556A004B56BE /* NWInterface_InterfaceType+Extension.swift in Sources */,
 				18761C5C2966B56500061F2B /* SUITableViewCellData.swift in Sources */,
-				3060B49A2A3796E0002D48B4 /* MetaTextureComputeView.swift in Sources */,
+				3060B49A2A3796E0002D48B4 /* MetalTextureView.swift in Sources */,
 				30E976062A098BF900A074EC /* CIContextView.swift in Sources */,
 				EF63D5A82840C3D300B99F22 /* SHTableSection.swift in Sources */,
 				EFF24CF9286C455F005AEC31 /* SQLiteSwiftDemoView.swift in Sources */,
@@ -3034,12 +3034,12 @@
 				309F49422A1571F8000444A8 /* DisclosureGroupExampleView.swift in Sources */,
 				EF69CD892832005500D2E003 /* DatePickerDemoView.swift in Sources */,
 				EF30649528115271002BBF4A /* SHTagListView.swift in Sources */,
-				303804152A3274930057FBF6 /* MetalTriangleDepthRenderer.swift in Sources */,
+				303804152A3274930057FBF6 /* MetalDepthRenderer.swift in Sources */,
 				4459CBF9281D50BB00EBC53A /* FileDocumentHelper.swift in Sources */,
 				30D075AD29E1AD0C00B09488 /* NetworkFrameworkView.swift in Sources */,
 				EF4CD9FF281015B200BD8536 /* SHRoundedCornersView.swift in Sources */,
 				EF9B58D827917ED900E6C6ED /* SHLinearGradientCrossView.swift in Sources */,
-				3060B49B2A3796E0002D48B4 /* MetaTextureComputeView.swift in Sources */,
+				3060B49B2A3796E0002D48B4 /* MetalTextureView.swift in Sources */,
 				4478E44E288C09C600BDD67E /* ToggleDemoView.swift in Sources */,
 				30D526132A16B7F4007A61A8 /* SPC.c in Sources */,
 				300BB9D92A183F7A005B20A8 /* ThirdPartyHomeView.swift in Sources */,

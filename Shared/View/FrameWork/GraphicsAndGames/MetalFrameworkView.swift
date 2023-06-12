@@ -31,8 +31,8 @@ struct MetalFrameworkView: View {
                 NavigationLink("Trangle depth testing") {
                     MetalDepthView()
                 }
-                NavigationLink("Texture Compute") {
-                    MetaTextureComputeView()
+                NavigationLink("Texture") {
+                    MetalTextureView()
                 }
             }
         }

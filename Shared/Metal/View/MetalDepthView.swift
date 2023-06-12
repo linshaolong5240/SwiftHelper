@@ -67,7 +67,7 @@ struct MetalTrangleDepthView: CPViewRepresent {
         let mtkView = MTKView()
         mtkView.enableSetNeedsDisplay = true
         mtkView.device = MTLCreateSystemDefaultDevice()
-        context.coordinator.renderer = MetalTriangleDepthRenderer(mtkView: mtkView)
+        context.coordinator.renderer = MetalDepthRenderer(mtkView: mtkView)
         mtkView.delegate = context.coordinator.renderer
         
         return mtkView
@@ -85,7 +85,7 @@ struct MetalTrangleDepthView: CPViewRepresent {
     }
     
     class Coordinator {
-        var renderer: MetalTriangleDepthRenderer?
+        var renderer: MetalDepthRenderer?
     }
 }
 

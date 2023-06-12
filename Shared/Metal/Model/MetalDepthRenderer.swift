@@ -1,5 +1,5 @@
 //
-//  MetalTriangleDepthRenderer.swift
+//  MetalDepthRenderer.swift
 //  SwiftHelper
 //
 //  Created by sauron on 2023/6/9.
@@ -9,7 +9,7 @@
 import Foundation
 import MetalKit
 
-class MetalTriangleDepthRenderer: NSObject, MTKViewDelegate {
+class MetalDepthRenderer: NSObject, MTKViewDelegate {
     private var device: MTLDevice
     private var drawableSize: vector_uint2
     private var pipelineState: MTLRenderPipelineState
@@ -37,7 +37,7 @@ class MetalTriangleDepthRenderer: NSObject, MTKViewDelegate {
         let fragmentFunction = metalLibrary?.makeFunction(name: "fragmentShader")
         
         let pipelineStateDescriptor = MTLRenderPipelineDescriptor()
-        pipelineStateDescriptor.label = "Simple Pipeline"
+        pipelineStateDescriptor.label = "Depth Pipeline"
         pipelineStateDescriptor.depthAttachmentPixelFormat = mtkView.depthStencilPixelFormat
         pipelineStateDescriptor.colorAttachments[0].pixelFormat = mtkView.colorPixelFormat
         pipelineStateDescriptor.vertexFunction = vertexFunction
@@ -87,10 +87,10 @@ class MetalTriangleDepthRenderer: NSObject, MTKViewDelegate {
         let height = Float(drawableSize.y * UInt32(ScreenHelper.mainScale))
 
         let quadRangleVertices: [SPVertex] = [
-            SPVertex(position: vector_float4(0, height, 0.5, 0), color: vector_float4(0.5, 0.5, 0.5, 1)),
-            SPVertex(position: vector_float4(width, height, 0.5, 0), color: vector_float4(0.5, 0.5, 0.5, 1)),
-            SPVertex(position: vector_float4(0, 0, 0.5, 0), color: vector_float4(0.5, 0.5, 0.5, 1)),
-            SPVertex(position: vector_float4(width, 0, 0.5, 0), color: vector_float4(0.5, 0.5, 0.5, 1)),
+            SPVertex(position: vector_float4(0, height, 1.5, 1), color: vector_float4(0.5, 0.5, 0.5, 1)),
+            SPVertex(position: vector_float4(width, height, 1.5, 1), color: vector_float4(0.5, 0.5, 0.5, 1)),
+            SPVertex(position: vector_float4(0, 0, 0.5, 1), color: vector_float4(0.5, 0.5, 0.5, 1)),
+            SPVertex(position: vector_float4(width, 0, 0.5, 1), color: vector_float4(0.5, 0.5, 0.5, 1)),
         ]
         
         let triangleVertices: [SPVertex] = [

@@ -18,14 +18,24 @@
 //};
 
 typedef enum SPVertexInputIndex {
-    SPVertexInputIndexVertices = 0,
-    SPVertexInputIndexViewport = 1,
+    SPVertexInputIndexVertices,
+    SPVertexInputIndexViewport,
 } SPVertexInputIndex;
+
+typedef enum AAPLTextureIndex
+{
+    SPTextureIndexInput,
+    SPTextureIndexOutput,
+} SPTextureIndex;
 
 typedef struct {
     vector_float4 position;
     vector_float4 color;
 } SPVertex;
 
+typedef struct {
+    vector_float4 position;
+    vector_float2 textureCoordinate;
+} SPTextureVertex;
 
 #endif /* ShaderTypes_h */

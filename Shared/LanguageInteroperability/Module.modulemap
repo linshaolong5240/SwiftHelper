@@ -21,3 +21,9 @@ module SPObjectiveC {
     header "ObjectiveC/SPObjectiveCTest.h"
     export *
 }
+
+
+module SPImage {
+    header "C/Image/SPImage.h"
+    export *
+}

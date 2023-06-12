@@ -1,8 +1,8 @@
 //
-//  Shape.metal
+//  Texture2dShader.metal
 //  SwiftHelper
 //
-//  Created by sauron on 2023/5/28.
+//  Created by sauron on 2023/6/13.
 //  Copyright © 2023 com.sauronpi. All rights reserved.
 //
 
@@ -20,13 +20,13 @@ struct RasterizerData {
     // interpolates its value with the values of the other triangle vertices
     // and then passes the interpolated value to the fragment shader for each
     // fragment in the triangle.
-    float4 color;
+    float2 textureCoordinate;
 };
 
-vertex RasterizerData
-vertexShader(uint vertexID [[vertex_id]],
-             constant SPVertex *vertices [[buffer(0)]],
-             constant vector_uint2 *viewportSizePointer [[buffer(1)]]) {
+vertex RasterizerData TextureVertexShader(uint vertexID [[ vertex_id ]],
+             constant SPTextureVertex *vertices [[ buffer(0) ]],
+             constant vector_uint2 *viewportSizePointer  [[ buffer(1) ]]) {
+
     RasterizerData out;
 
     // Index into the array of positions to get the current vertex.
@@ -41,15 +41,24 @@ vertexShader(uint vertexID [[vertex_id]],
     // To convert from positions in pixel space to positions in clip-space,
     //  divide the pixel coordinates by half the size of the viewport.
     out.position = vector_float4(0.0, 0.0, 0.0, 1.0);
-    out.position.xy = vertices[vertexID].position.xy / viewportSize - 1.0;
+    out.position.xy = vertices[vertexID].position.xy / viewportSize;
     out.position.z = vertices[vertexID].position.z;
-    // Pass the input color directly to the rasterizer.
-    out.color = vertices[vertexID].color;
+
+    // Pass the input textureCoordinate straight to the output RasterizerData.  This value will be
+    //   interpolated with the other textureCoordinate values in the vertices that make up the
+    //   triangle.
+    out.textureCoordinate = vertices[vertexID].textureCoordinate;
 
     return out;
 }
 
-fragment float4 fragmentShader(RasterizerData in [[stage_in]]) {
-    // Return the interpolated color.
-    return in.color;
+fragment float4 TextureSamplingShader(RasterizerData  in           [[stage_in]],
+                               texture2d<half> colorTexture [[ texture(0) ]])
+{
+    constexpr sampler textureSampler (mag_filter::linear,
+                                      min_filter::linear);
+
+    // Sample the texture and return the color to colorSample
+    const half4 colorSample = colorTexture.sample (textureSampler, in.textureCoordinate);
+    return float4(colorSample);
 }

@@ -24,7 +24,7 @@ struct SHGuideWidgetView: SHWidgetView {
             configuration.theme.background.makeView(family, colorScheme: colorScheme)
             VStack(alignment: .leading, spacing: 10) {
                 let fontSize: CGFloat = getFontSize()
-                Image("BrandIcon")
+                Image("AppIconRounded")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 60, height: 60)

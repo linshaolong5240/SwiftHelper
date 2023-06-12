@@ -11,14 +11,14 @@
 
 #include <stdio.h>
 
-//#ifdef __cplusplus //C and cpp compiled together must add exten C
-//extern "C" {
-//#endif
+#ifdef __cplusplus //C and cpp compiled together must add exten C
+extern "C" {
+#endif
 
 void SPCTest(void);
 
-//#ifdef __cplusplus//C and cpp compiled together must add exten C
-//}
-//#endif
+#ifdef __cplusplus//C and cpp compiled together must add exten C
+}
+#endif
 
 #endif /* SPC_h */

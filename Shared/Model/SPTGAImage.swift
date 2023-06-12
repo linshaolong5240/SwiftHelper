@@ -20,6 +20,8 @@ public struct SPTGAImage {
     
     init?(contentsOfFile url: URL) {
         guard let data = try? Data(contentsOf: url) else {
+            #if DEBUG
+            #endif
             return nil
         }
         var header = SPTGAHeader()
@@ -30,6 +32,50 @@ public struct SPTGAImage {
 #if DEBUG
         print("TGA image width: \(header.width), height: \(header.height), bitsPerAlpha: \(header.descriptor.bitsPerAlpha) rightOrigin: \(header.descriptor.rightOrigin) topOrigin: \(header.descriptor.topOrigin)")
 #endif
+        
+        if header.imageType != 2 {
+#if DEBUG
+            print("This image loader only supports non-compressed BGR(A) TGA files")
+#endif
+            return nil;
+        }
+        
+        if header.colorMapType > 0 {
+#if DEBUG
+            print("This image loader doesn't support TGA files with a colormap")
+#endif
+            return nil;
+        }
+        
+        if header.xOrigin > 0 || header.yOrigin > 0 {
+#if DEBUG
+            print("This image loader doesn't support TGA files with a non-zero origin")
+#endif
+            return nil;
+        }
+        
+        if header.bitsPerPixel == 32 {
+            if header.descriptor.bitsPerAlpha != 8 {
+#if DEBUG
+                print("This image loader only supports 32-bit TGA files with 8 bits of alpha");
+#endif
+                return nil;
+            }
+            
+        } else if header.bitsPerPixel == 24 {
+            if header.descriptor.bitsPerAlpha != 0 {
+#if DEBUG
+                print("This image loader only supports 24-bit TGA files with no alpha");
+#endif
+                return nil;
+            }
+        } else {
+#if DEBUG
+                print("This image loader only supports 24-bit and 32-bit TGA files");
+#endif
+            return nil;
+        }
+        
         let bytesPerPixel: Int = Int(header.bitsPerPixel / 8)
         let bytesPerRow: Int = bytesPerPixel * Int(header.width)
         

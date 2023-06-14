@@ -118,8 +118,6 @@
 		303C0EFE29A5DC5A00ECEB63 /* SwiftUIListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0EFC29A5DC5A00ECEB63 /* SwiftUIListView.swift */; };
 		303C0F0129A5E0FB00ECEB63 /* SwiftUITextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */; };
 		303C0F0229A5E0FB00ECEB63 /* SwiftUITextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */; };
-		303C0F0429A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0F0329A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift */; };
-		303C0F0529A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C0F0329A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift */; };
 		303E98CB29C15FC100B4B462 /* TechnologySpecificViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */; };
 		303E98CC29C15FC100B4B462 /* TechnologySpecificViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */; };
 		303E98CE29C1601200B4B462 /* PhotosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303E98CD29C1601200B4B462 /* PhotosPickerView.swift */; };
@@ -202,6 +200,10 @@
 		30C2BD902A13E5AE00F07CA1 /* ImageRendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2BD8E2A13E5AE00F07CA1 /* ImageRendererView.swift */; };
 		30C2BD932A142B7500F07CA1 /* ContentMode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2BD922A142B7500F07CA1 /* ContentMode+Extension.swift */; };
 		30C2BD942A142B7500F07CA1 /* ContentMode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C2BD922A142B7500F07CA1 /* ContentMode+Extension.swift */; };
+		30C4093F2A39D17E00642218 /* SwiftResultBuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C4093E2A39D17E00642218 /* SwiftResultBuildView.swift */; };
+		30C409402A39D17E00642218 /* SwiftResultBuildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C4093E2A39D17E00642218 /* SwiftResultBuildView.swift */; };
+		30C409422A39E22F00642218 /* SwiftUITextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C409412A39E22F00642218 /* SwiftUITextEditorView.swift */; };
+		30C409432A39E22F00642218 /* SwiftUITextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C409412A39E22F00642218 /* SwiftUITextEditorView.swift */; };
 		30D075AC29E1AD0C00B09488 /* NetworkFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D075AB29E1AD0C00B09488 /* NetworkFrameworkView.swift */; };
 		30D075AD29E1AD0C00B09488 /* NetworkFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D075AB29E1AD0C00B09488 /* NetworkFrameworkView.swift */; };
 		30D5260A2A16ACDD007A61A8 /* SPLanguageInteroperabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D526092A16ACDD007A61A8 /* SPLanguageInteroperabilityView.swift */; };
@@ -668,10 +670,9 @@
 		303804132A3274930057FBF6 /* MetalDepthRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDepthRenderer.swift; sourceTree = "<group>"; };
 		303804172A3278C40057FBF6 /* MetalDepthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalDepthView.swift; sourceTree = "<group>"; };
 		3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUISliderView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Controls/SwiftUISliderView.swift; sourceTree = SOURCE_ROOT; };
-		303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextView.swift; sourceTree = SOURCE_ROOT; };
+		303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextView.swift; path = Shared/View/Framework/AppFrameworks/SwiftUI/Controls/SwiftUITextView.swift; sourceTree = SOURCE_ROOT; };
 		303C0EFC29A5DC5A00ECEB63 /* SwiftUIListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIListView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/ViewLayout/SwiftUIListView.swift; sourceTree = SOURCE_ROOT; };
-		303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextFieldView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextFieldView.swift; sourceTree = SOURCE_ROOT; };
-		303C0F0329A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextInputAndOutputView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/TextInputAndOutput/SwiftUITextInputAndOutputView.swift; sourceTree = SOURCE_ROOT; };
+		303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextFieldView.swift; path = Shared/View/Framework/AppFrameworks/SwiftUI/Controls/SwiftUITextFieldView.swift; sourceTree = SOURCE_ROOT; };
 		303E98CA29C15FC100B4B462 /* TechnologySpecificViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TechnologySpecificViews.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/TechnologySpecificViews/TechnologySpecificViews.swift; sourceTree = SOURCE_ROOT; };
 		303E98CD29C1601200B4B462 /* PhotosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotosPickerView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/TechnologySpecificViews/PhotosPickerView.swift; sourceTree = SOURCE_ROOT; };
 		3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTriangleRenderer.swift; sourceTree = "<group>"; };
@@ -718,6 +719,8 @@
 		30C2BD8B2A11912F00F07CA1 /* CoreGraphicsFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreGraphicsFrameworkView.swift; path = Shared/View/FrameWork/GraphicsAndGames/CoreGraphicsFrameworkView.swift; sourceTree = SOURCE_ROOT; };
 		30C2BD8E2A13E5AE00F07CA1 /* ImageRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageRendererView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Views/Images/ImageRendererView.swift; sourceTree = SOURCE_ROOT; };
 		30C2BD922A142B7500F07CA1 /* ContentMode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentMode+Extension.swift"; sourceTree = "<group>"; };
+		30C4093E2A39D17E00642218 /* SwiftResultBuildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftResultBuildView.swift; path = Shared/View/FrameWork/AppFrameworks/Swift/SwiftResultBuildView.swift; sourceTree = SOURCE_ROOT; };
+		30C409412A39E22F00642218 /* SwiftUITextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUITextEditorView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Controls/SwiftUITextEditorView.swift; sourceTree = SOURCE_ROOT; };
 		30D075AB29E1AD0C00B09488 /* NetworkFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkFrameworkView.swift; path = Shared/View/FrameWork/System/NetworkFrameworkView.swift; sourceTree = SOURCE_ROOT; };
 		30D526092A16ACDD007A61A8 /* SPLanguageInteroperabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPLanguageInteroperabilityView.swift; sourceTree = "<group>"; };
 		30D526102A16B7F4007A61A8 /* SPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPC.h; sourceTree = "<group>"; };
@@ -1325,6 +1328,7 @@
 			children = (
 				303804022A3241C50057FBF6 /* SwiftFrameworkView.swift */,
 				303804052A3241F10057FBF6 /* SwiftMemoryLayoutView.swift */,
+				30C4093E2A39D17E00642218 /* SwiftResultBuildView.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -1363,16 +1367,6 @@
 				3060B49C2A37AB9C002D48B4 /* TextureShader.metal */,
 			);
 			path = Shader;
-			sourceTree = "<group>";
-		};
-		303C0EF729A5D88100ECEB63 /* TextInputAndOutput */ = {
-			isa = PBXGroup;
-			children = (
-				303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */,
-				303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */,
-				303C0F0329A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift */,
-			);
-			path = TextInputAndOutput;
 			sourceTree = "<group>";
 		};
 		303C0EFB29A5DC2300ECEB63 /* ViewLayout */ = {
@@ -1482,10 +1476,13 @@
 		309F493F2A1570C6000444A8 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				309F49402A1571F8000444A8 /* DisclosureGroupExampleView.swift */,
 				30A9034A29A4C32500E18CC8 /* SwiftUIButtonView.swift */,
 				3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */,
-				309F49402A1571F8000444A8 /* DisclosureGroupExampleView.swift */,
 				3038041A2A3503680057FBF6 /* SwiftUISliderView.swift */,
+				303C0F0029A5E0FB00ECEB63 /* SwiftUITextFieldView.swift */,
+				303C0EF829A5D8D900ECEB63 /* SwiftUITextView.swift */,
+				30C409412A39E22F00642218 /* SwiftUITextEditorView.swift */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -1537,7 +1534,6 @@
 				303C0EFF29A5DD2100ECEB63 /* Images */,
 				30A9032F29A4BC3500E18CC8 /* Animations */,
 				30A9033329A4BE4C00E18CC8 /* ControlsAndIndicators */,
-				303C0EF729A5D88100ECEB63 /* TextInputAndOutput */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2730,7 +2726,6 @@
 				EFCB24F927D5E1B600A77175 /* WidgetMeidumPostionView.swift in Sources */,
 				30A9035E29A4CFCD00E18CC8 /* SwiftUIEnvironmentValuesView.swift in Sources */,
 				44ADD14C27EDC03B0023C25B /* OrientationHelper.swift in Sources */,
-				303C0F0429A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift in Sources */,
 				EFBBE1B527A2725F009173A5 /* SHCarouselView.swift in Sources */,
 				EFB2C570283736FB0022AABC /* GradientDemoView.swift in Sources */,
 				EF4A38A42858672700332E07 /* UIKitViewController.swift in Sources */,
@@ -2739,6 +2734,7 @@
 				EF4A38A22858651D00332E07 /* UINavigationBarCustomDemoController.swift in Sources */,
 				44ADD18727EF440D0023C25B /* SHWidgetFontColorPicker.swift in Sources */,
 				188889C229515092003933C4 /* SHSafeAreaContentViewController.swift in Sources */,
+				30C409422A39E22F00642218 /* SwiftUITextEditorView.swift in Sources */,
 				44536A2428A3593000292FC1 /* SHPageView.swift in Sources */,
 				EF596894274CBCDC003D88F6 /* DateHelper.swift in Sources */,
 				EF8AC8DC2791526E00FF227E /* AppState.swift in Sources */,
@@ -2776,6 +2772,7 @@
 				18C79F06297A65900014A09A /* SUILabelCheckmarkTableViewController.swift in Sources */,
 				EF94BAB0282D0FF1008EA92B /* UIPictureInPictureViewController.swift in Sources */,
 				301C472F29E3556A004B56BE /* NWInterface_InterfaceType+Extension.swift in Sources */,
+				30C4093F2A39D17E00642218 /* SwiftResultBuildView.swift in Sources */,
 				18761C5C2966B56500061F2B /* SUITableViewCellData.swift in Sources */,
 				3060B49A2A3796E0002D48B4 /* MetalTextureView.swift in Sources */,
 				30E976062A098BF900A074EC /* CIContextView.swift in Sources */,
@@ -2944,6 +2941,7 @@
 				30E976102A0991EE00A074EC /* BundleView.swift in Sources */,
 				30C2BD862A11396D00F07CA1 /* ImageIOFrameworkView.swift in Sources */,
 				304720962A273B190081E028 /* MetalComputeViewController.swift in Sources */,
+				30C409402A39D17E00642218 /* SwiftResultBuildView.swift in Sources */,
 				EF596886274C821B003D88F6 /* UIKitHelper.swift in Sources */,
 				30E9760A2A098C8D00A074EC /* SPCurrentAppIconView.swift in Sources */,
 				EFE87175277B2C8100EB5CDE /* URLHelper.swift in Sources */,
@@ -3027,6 +3025,7 @@
 				3060B49E2A37AB9C002D48B4 /* TextureShader.metal in Sources */,
 				30A9034529A4C2A600E18CC8 /* SwiftUINavigationView.swift in Sources */,
 				304720992A273CE30081E028 /* ComputeShader.metal in Sources */,
+				30C409432A39E22F00642218 /* SwiftUITextEditorView.swift in Sources */,
 				44F2DA0428EAD4AF0047EBBD /* SHMD5HelperView.swift in Sources */,
 				EF58C20427899C2A006C8681 /* SHInfoPList.swift in Sources */,
 				EFF24CE9286BFCD2005AEC31 /* FrameworkHomeView.swift in Sources */,
@@ -3074,7 +3073,6 @@
 				EF596880274C7E52003D88F6 /* WidgetHelper.swift in Sources */,
 				3047208D2A2731410081E028 /* MetalTriangleViewController.swift in Sources */,
 				2B020C5B2791D557000797F5 /* CGLineCap+Extension.swift in Sources */,
-				303C0F0529A5E25D00ECEB63 /* SwiftUITextInputAndOutputView.swift in Sources */,
 				30544BF72A16F12400164B28 /* SPObjectiveCTest.m in Sources */,
 				30A9033C29A4C1D800E18CC8 /* SwiftUIImagesView.swift in Sources */,
 				2B15D6E5275B0FEC00034697 /* SHPageTabView.swift in Sources */,

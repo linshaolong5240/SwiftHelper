@@ -25,6 +25,16 @@ struct SwiftUIFrameworkView: View {
                         NavigationLink("Picker") {
                             SwiftUIPickerView()
                         }
+                        NavigationLink("Text") {
+                            SwiftUITextView()
+                        }
+                        NavigationLink("TextField") {
+                            SwiftUITextFieldView()
+                        }
+                        NavigationLink("TextEditor") {
+                            SwiftUITextEditorView()
+                        }
+                        
                     }
                     Section("File exporter/importer") {
                         NavigationLink("FileExporter") {
@@ -59,9 +69,6 @@ struct SwiftUIFrameworkView: View {
                 Section {
                     NavigationLink("Animations") {
                         SwiftUIAnimationsView()
-                    }
-                    NavigationLink("Text input and output") {
-                        SwiftUITextInputAndOutputView()
                     }
                     NavigationLink("Images") {
                         SwiftUIImagesView()

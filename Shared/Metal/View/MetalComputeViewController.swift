@@ -23,21 +23,38 @@ class MetalComputeViewController: CPViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
-        
-        let button = CPButton(title: "Compute on GPU", target: self, action: #selector(compute))
+        #if canImport(AppKit)
+        let button = NSButton(title: "Compute on GPU", target: self, action: #selector(compute))
+        #endif
+        #if canImport(UIKit)
+        let button = UIButton()
+        button.titleLabel?.text = "Compute on GPU"
+        button.addTarget(self, action: #selector(compute), for: .touchUpInside)
+#endif
         self.view.addSubview(button)
         button.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
     }
-    
+
+#if canImport(AppKit)
     override func viewDidAppear() {
         super.viewDidAppear()
         if !isMetalInit {
             initMetal()
         }
     }
+#endif
     
+#if canImport(UIKit)
+override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    if !isMetalInit {
+        initMetal()
+    }
+}
+#endif
+
     private func initMetal() {
         defer { self.isMetalInit = true }
         guard let device = MTLCreateSystemDefaultDevice() else {

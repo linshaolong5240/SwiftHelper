@@ -77,7 +77,12 @@ struct MetalTrangleDepthView: CPViewRepresent {
         context.coordinator.renderer?.topDepth = topDepth
         context.coordinator.renderer?.lefDepth = lefDepth
         context.coordinator.renderer?.rightDepth = rightDepth
+        #if canImport(AppKit)
         view.needsDisplay = true
+        #endif
+        #if canImport(UIKit)
+        view.setNeedsDisplay()
+        #endif
     }
     
     func makeCoordinator() -> Coordinator {

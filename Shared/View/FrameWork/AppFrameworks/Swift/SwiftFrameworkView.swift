@@ -15,6 +15,9 @@ struct SwiftFrameworkView: View {
                 NavigationLink("MemoryLayout") {
                     SwiftMemoryLayoutView()
                 }
+                NavigationLink("Result Build") {
+                    SwiftResultBuildView()
+                }
             }
         }
     }

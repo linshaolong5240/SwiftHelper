@@ -6,7 +6,7 @@
 //  Copyright © 2023 com.sauronpi. All rights reserved.
 //
 
-import Cocoa
+import SwiftUI
 
 class CPBaseViewController: CPViewController {
     

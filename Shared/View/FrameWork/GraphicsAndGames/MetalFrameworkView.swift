@@ -34,6 +34,9 @@ struct MetalFrameworkView: View {
                 NavigationLink("Texture") {
                     MetalTextureView()
                 }
+                NavigationLink("Texture compute") {
+                    MetalTextureComputeView()
+                }
             }
         }
     }

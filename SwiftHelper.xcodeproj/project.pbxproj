@@ -138,6 +138,10 @@
 		304720962A273B190081E028 /* MetalComputeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304720942A273B190081E028 /* MetalComputeViewController.swift */; };
 		304720982A273CE30081E028 /* ComputeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 304720972A273CE30081E028 /* ComputeShader.metal */; };
 		304720992A273CE30081E028 /* ComputeShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 304720972A273CE30081E028 /* ComputeShader.metal */; };
+		30518B602A37E9760030AF4A /* CPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30518B5F2A37E9760030AF4A /* CPBaseViewController.swift */; };
+		30518B612A37E9760030AF4A /* CPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30518B5F2A37E9760030AF4A /* CPBaseViewController.swift */; };
+		30518B632A37EA010030AF4A /* MetalTextureComputeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30518B622A37EA010030AF4A /* MetalTextureComputeView.swift */; };
+		30518B642A37EA010030AF4A /* MetalTextureComputeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30518B622A37EA010030AF4A /* MetalTextureComputeView.swift */; };
 		3051DF7429FD49CA000BB569 /* SwiftUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */; };
 		3051DF7529FD49CA000BB569 /* SwiftUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */; };
 		3051DF7729FE52C1000BB569 /* SearchPathDomainMask+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051DF7629FE52C1000BB569 /* SearchPathDomainMask+Extension.swift */; };
@@ -164,6 +168,8 @@
 		307DFA2E2A1589A7004E0F8D /* FileImporterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */; };
 		307DFA302A158E66004E0F8D /* OnDropExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2F2A158E66004E0F8D /* OnDropExampleView.swift */; };
 		307DFA312A158E66004E0F8D /* OnDropExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307DFA2F2A158E66004E0F8D /* OnDropExampleView.swift */; };
+		309045412A394B0D00801DB1 /* MetalTextureComputeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309045402A394B0D00801DB1 /* MetalTextureComputeRenderer.swift */; };
+		309045422A394B0D00801DB1 /* MetalTextureComputeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309045402A394B0D00801DB1 /* MetalTextureComputeRenderer.swift */; };
 		309F43362A180D10009A612F /* MetalFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F43352A180D10009A612F /* MetalFrameworkView.swift */; };
 		309F43372A180D10009A612F /* MetalFrameworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F43352A180D10009A612F /* MetalFrameworkView.swift */; };
 		309F49412A1571F8000444A8 /* DisclosureGroupExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F49402A1571F8000444A8 /* DisclosureGroupExampleView.swift */; };
@@ -676,6 +682,8 @@
 		304720912A2738150081E028 /* MetalTextureRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureRenderer.swift; sourceTree = "<group>"; };
 		304720942A273B190081E028 /* MetalComputeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalComputeViewController.swift; sourceTree = "<group>"; };
 		304720972A273CE30081E028 /* ComputeShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = ComputeShader.metal; sourceTree = "<group>"; };
+		30518B5F2A37E9760030AF4A /* CPBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBaseViewController.swift; sourceTree = "<group>"; };
+		30518B622A37EA010030AF4A /* MetalTextureComputeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureComputeView.swift; sourceTree = "<group>"; };
 		3051DF7329FD49CA000BB569 /* SwiftUIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIPickerView.swift; path = Shared/View/Framework/AppFrameworks/SwiftUI/Controls/SwiftUIPickerView.swift; sourceTree = SOURCE_ROOT; };
 		3051DF7629FE52C1000BB569 /* SearchPathDomainMask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPathDomainMask+Extension.swift"; sourceTree = "<group>"; };
 		3051DF7929FE5E1A000BB569 /* SearchPathDirectory+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPathDirectory+Extension.swift"; sourceTree = "<group>"; };
@@ -693,6 +701,7 @@
 		307DB6122A16D88C0018CE70 /* SPObjectiveCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPObjectiveCTest.m; sourceTree = "<group>"; };
 		307DFA2C2A1589A7004E0F8D /* FileImporterExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileImporterExampleView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Modifiers/FileImporterExampleView.swift; sourceTree = SOURCE_ROOT; };
 		307DFA2F2A158E66004E0F8D /* OnDropExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnDropExampleView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Modifiers/OnDropExampleView.swift; sourceTree = SOURCE_ROOT; };
+		309045402A394B0D00801DB1 /* MetalTextureComputeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTextureComputeRenderer.swift; sourceTree = "<group>"; };
 		309F43352A180D10009A612F /* MetalFrameworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MetalFrameworkView.swift; path = Shared/View/Framework/GraphicsAndGames/MetalFrameworkView.swift; sourceTree = SOURCE_ROOT; };
 		309F49402A1571F8000444A8 /* DisclosureGroupExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DisclosureGroupExampleView.swift; path = Shared/View/FrameWork/AppFrameworks/SwiftUI/Controls/DisclosureGroupExampleView.swift; sourceTree = SOURCE_ROOT; };
 		30A9033A29A4C1D800E18CC8 /* SwiftUIImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUIImagesView.swift; path = Shared/View/Framework/AppFrameworks/SwiftUI/Views/Images/SwiftUIImagesView.swift; sourceTree = SOURCE_ROOT; };
@@ -1325,6 +1334,7 @@
 			children = (
 				303804092A3254E10057FBF6 /* MetalCompute.swift */,
 				303804132A3274930057FBF6 /* MetalDepthRenderer.swift */,
+				309045402A394B0D00801DB1 /* MetalTextureComputeRenderer.swift */,
 				304720912A2738150081E028 /* MetalTextureRenderer.swift */,
 				3047207A2A246DC70081E028 /* MetalTriangleRenderer.swift */,
 			);
@@ -1339,6 +1349,7 @@
 				303804172A3278C40057FBF6 /* MetalDepthView.swift */,
 				3047208B2A2731410081E028 /* MetalTriangleViewController.swift */,
 				3060B4992A3796E0002D48B4 /* MetalTextureView.swift */,
+				30518B622A37EA010030AF4A /* MetalTextureComputeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1402,6 +1413,14 @@
 			children = (
 				304720872A2724360081E028 /* NSBaseView.swift */,
 				304720852A2721380081E028 /* NSBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		30518B5E2A37E9430030AF4A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				30518B5F2A37E9760030AF4A /* CPBaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1900,6 +1919,7 @@
 				186ED62B291206070037742E /* SHAppConfig.swift */,
 				EF596852274C786F003D88F6 /* SwiftHelperApp.swift */,
 				EF596854274C7871003D88F6 /* Assets.xcassets */,
+				30518B5E2A37E9430030AF4A /* Base */,
 				2B020C582791D542000797F5 /* Extension */,
 				18A91963295D3B3F001B473B /* Feature */,
 				EF596870274C78D7003D88F6 /* Helper */,
@@ -2600,6 +2620,7 @@
 			files = (
 				187E1A6528FEB06A000006BF /* SHValueStepper.swift in Sources */,
 				30C2BD882A11486000F07CA1 /* ImageIOHelper.swift in Sources */,
+				30518B602A37E9760030AF4A /* CPBaseViewController.swift in Sources */,
 				30A9034729A4C2C600E18CC8 /* SwiftUITableViewView.swift in Sources */,
 				EF43312A285C08BA005A837E /* UITextViewDemoController.swift in Sources */,
 				3025C6F029CD7EA100CFE638 /* SFSymbolsView.swift in Sources */,
@@ -2670,6 +2691,7 @@
 				EF5136A8279AE8A20097E0CB /* UITabBarDemoController.swift in Sources */,
 				30D526122A16B7F4007A61A8 /* SPC.c in Sources */,
 				EF9E058B285ABCEF00A712BF /* UICollectionViewHorizontalDemoController.swift in Sources */,
+				30518B632A37EA010030AF4A /* MetalTextureComputeView.swift in Sources */,
 				EF57414227D9973F002C92A7 /* MyWidgetView.swift in Sources */,
 				185D9C312946BAAC005B29CB /* UIModalPresentationStyleViewController.swift in Sources */,
 				EF75C62C285FFD72001956F3 /* SHCarouselViewDemoController.swift in Sources */,
@@ -2886,6 +2908,7 @@
 				183BB6612978F7A200C1D58D /* SUILableSwitcherTableViewCellData.swift in Sources */,
 				EF30649728115658002BBF4A /* SHTagListScrollableView.swift in Sources */,
 				18C79F02297A48D40014A09A /* SUILabelCheckmarkTableViewCellData.swift in Sources */,
+				309045412A394B0D00801DB1 /* MetalTextureComputeRenderer.swift in Sources */,
 				EF55104A27D84C3E003BF2AA /* FileManagerHelper.swift in Sources */,
 				4478E450288C0D0A00BDD67E /* SwiftUIDemoView.swift in Sources */,
 				44ADD18D27EF6C330023C25B /* DateFormatterHelperView.swift in Sources */,
@@ -2992,6 +3015,7 @@
 				4478E459288D5FE400BDD67E /* CoreLocationDemoView.swift in Sources */,
 				EFF508F42823647A00B2B874 /* AnchorPreferenceDemo2View.swift in Sources */,
 				3031263829FC1E0700374584 /* SPAppIconGenerater.swift in Sources */,
+				309045422A394B0D00801DB1 /* MetalTextureComputeRenderer.swift in Sources */,
 				18A91972295D7681001B473B /* ImageSaver.swift in Sources */,
 				448557DD28B365CA00DAAC0F /* SHAPIIPAction.swift in Sources */,
 				4478E482289315ED00BDD67E /* SHHomeNavigationItem.swift in Sources */,
@@ -3030,6 +3054,7 @@
 				4478E445288BDE9600BDD67E /* LazyVGridDemoView.swift in Sources */,
 				3025C6F429CD8E6E00CFE638 /* MLFeatureType+Extension.swift in Sources */,
 				44EBBF2428A08BC8008A595F /* SHChartsView.swift in Sources */,
+				30518B612A37E9760030AF4A /* CPBaseViewController.swift in Sources */,
 				188514FF295482C700AFCCF0 /* ContactsDemoView.swift in Sources */,
 				309F49422A1571F8000444A8 /* DisclosureGroupExampleView.swift in Sources */,
 				EF69CD892832005500D2E003 /* DatePickerDemoView.swift in Sources */,
@@ -3071,6 +3096,7 @@
 				18A91954295D2FAB001B473B /* PlatformOnlyView.swift in Sources */,
 				18A91957295D2FDD001B473B /* SHPlatform.swift in Sources */,
 				4478E4962893408400BDD67E /* AFAPIIPAction.swift in Sources */,
+				30518B642A37EA010030AF4A /* MetalTextureComputeView.swift in Sources */,
 				EF55104B27D84C3E003BF2AA /* FileManagerHelper.swift in Sources */,
 				4478E47C2893111C00BDD67E /* ScreenHelper.swift in Sources */,
 				30D5261F2A16BBAE007A61A8 /* SPCPP.cpp in Sources */,

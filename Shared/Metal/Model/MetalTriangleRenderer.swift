@@ -92,9 +92,9 @@ public class MetalTriangleRenderer: NSObject, MTKViewDelegate {
         commandEncoder.setRenderPipelineState(pipelineState)
         
         // 编码传递顶点函数参数1命令
-        commandEncoder.setVertexBytes(triangleVertices, length: MemoryLayout<SPVertex>.size * triangleVertices.count, index: 0)
+        commandEncoder.setVertexBytes(triangleVertices, length: MemoryLayout<SPVertex>.size * triangleVertices.count, index: Int(SPVertexInputIndexVertices.rawValue))
         // 编码传递顶点函数参数2命令
-        commandEncoder.setVertexBytes(&drawableSize, length: MemoryLayout<vector_uint2>.size, index: 1)
+        commandEncoder.setVertexBytes(&drawableSize, length: MemoryLayout<vector_uint2>.size, index: Int(SPVertexInputIndexViewport.rawValue))
         // 编码绘图命令
         commandEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: triangleVertices.count)
         // 结束编码命令

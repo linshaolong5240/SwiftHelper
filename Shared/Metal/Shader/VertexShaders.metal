@@ -25,8 +25,8 @@ struct RasterizerData {
 
 vertex RasterizerData
 vertexShader(uint vertexID [[vertex_id]],
-             constant SPVertex *vertices [[buffer(0)]],
-             constant vector_uint2 *viewportSizePointer [[buffer(1)]]) {
+             constant SPVertex *vertices [[buffer(SPVertexInputIndexVertices)]],
+             constant vector_uint2 *viewportSizePointer [[buffer(SPVertexInputIndexViewport)]]) {
     RasterizerData out;
 
     // Index into the array of positions to get the current vertex.

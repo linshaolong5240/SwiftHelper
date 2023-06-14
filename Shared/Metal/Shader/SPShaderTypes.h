@@ -9,21 +9,34 @@
 #ifndef ShaderTypes_h
 #define ShaderTypes_h
 
+#ifdef __METAL_VERSION__
+#define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
+#define NSInteger metal::int32_t
+#else
+
+#import <Foundation/Foundation.h>
+
+#endif /* __METAL_VERSION__ */
+
 #include <simd/simd.h>
-//#include <Foundation/Foundation.h>
 
 //typedef NS_ENUM(NSInteger, SPVertexInputIndex) {
-//    SPVertexInputIndexVertices = 1,
-//    SPVertexInputIndexViewport = 2,
+//    SPVertexInputIndexVertices,
+//    SPVertexInputIndexViewport,
+//};
+//
+//typedef NS_ENUM(NSInteger, SPTextureIndex) {
+//    SPTextureIndexInput,
+//    SPTextureIndexOutput,
 //};
 
-typedef enum SPVertexInputIndex {
-    SPVertexInputIndexVertices,
+
+typedef enum {
+    SPVertexInputIndexVertices = 1,
     SPVertexInputIndexViewport,
 } SPVertexInputIndex;
 
-typedef enum AAPLTextureIndex
-{
+typedef enum {
     SPTextureIndexInput,
     SPTextureIndexOutput,
 } SPTextureIndex;

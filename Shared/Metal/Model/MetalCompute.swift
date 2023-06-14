@@ -12,7 +12,7 @@ import Metal
 public class MetalCompute {
     public var device: MTLDevice
     public var commandQueue: MTLCommandQueue
-    public var pipelineState: MTLComputePipelineState
+    public var computePiplineState: MTLComputePipelineState
     public var buffer0: MTLBuffer?
     public var buffer1: MTLBuffer?
     public var buffer2: MTLBuffer?
@@ -35,7 +35,7 @@ public class MetalCompute {
         }
         
         do {
-            self.pipelineState = try device.makeComputePipelineState(function: function)
+            self.computePiplineState = try device.makeComputePipelineState(function: function)
         } catch let error {
 #if DEBUG
             print("Failed to created pipeline state object: \(error)")
@@ -119,12 +119,12 @@ public class MetalCompute {
     }
     
     private func encoderAddCommand(encoder: MTLComputeCommandEncoder) {
-        encoder.setComputePipelineState(pipelineState)
+        encoder.setComputePipelineState(computePiplineState)
         encoder.setBuffer(buffer0, offset: 0, index: 0)
         encoder.setBuffer(buffer1, offset: 0, index: 1)
         encoder.setBuffer(buffer2, offset: 0, index: 2)
         let gridSize = MTLSize(width: arrayLength, height: 1, depth: 1)
-        let maxthreadGroupSize = min(pipelineState.maxTotalThreadsPerThreadgroup, arrayLength)
+        let maxthreadGroupSize = min(computePiplineState.maxTotalThreadsPerThreadgroup, arrayLength)
         
         let groupSize = MTLSize(width: maxthreadGroupSize, height: 1, depth: 1)
         

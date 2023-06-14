@@ -9,15 +9,9 @@
 import SwiftUI
 import MetalKit
 
-class MetalTriangleViewController: CPViewController {
+class MetalTriangleViewController: CPBaseViewController {
     
     private var renderer: MetalTriangleRenderer?
-
-#if canImport(AppKit)
-    override func loadView() {
-        self.view = NSBaseView()
-    }
-#endif
 
     override func viewDidLoad() {
         super.viewDidLoad()

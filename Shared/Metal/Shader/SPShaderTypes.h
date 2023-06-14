@@ -32,7 +32,7 @@
 
 
 typedef enum {
-    SPVertexInputIndexVertices = 1,
+    SPVertexInputIndexVertices,
     SPVertexInputIndexViewport,
 } SPVertexInputIndex;
 
